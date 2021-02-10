@@ -1,6 +1,9 @@
 <?php
 
+session_start();
 require "controller/controller.php";
+//require "controler/navigation.php";
+
 
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
@@ -9,10 +12,13 @@ if (isset($_GET['action'])) {
             home();
             break;
         case 'login' :
-            login();
+            login($_POST);
+            break;
+        case 'logout' :
+            logout();
             break;
         case 'register' :
-            register();
+            register($_POST);
             break;
         case 'about' :
             about();

@@ -63,7 +63,7 @@ ob_start();
                         </div>
                         <div class="form-group">
                           <label for="inputEmail">Email address *</label>
-                          <input class="form-control" type="email" name="Email" id="inputEmail" aria-describedby="emailHelp" placeholder="firstname@domain.ch" required>
+                          <input class="form-control" type="email" name="inputUserEmailAddress" id="inputEmail" aria-describedby="emailHelp" placeholder="firstname@domain.ch" required>
                           <small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
@@ -73,11 +73,11 @@ ob_start();
                         </div>
                         <div class="form-group">
                           <label for="inputPassword">Password *</label>
-                          <input class="form-control" type="password" name="Password" id="inputPassword" placeholder="Password" required>
+                          <input class="form-control" type="password" name="inputUserPsw" id="inputPassword" placeholder="Password" required>
                         </div>
                         <div class="form-group">
                           <label for="inputConfirmPassword">Password confirm *</label>
-                          <input class="form-control" type="password" name="PasswordConfirm" id="inputConfirmPassword" placeholder="PasswordConfirm" required>
+                          <input class="form-control" type="password" name="inputUserPswRepeat" id="inputConfirmPassword" placeholder="PasswordConfirm" required>
                         </div>
                     </div>
                   </div>
