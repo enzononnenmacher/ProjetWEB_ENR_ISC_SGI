@@ -14,6 +14,12 @@ if (isset($_GET['action'])) {
         case 'register' :
             register();
             break;
+        case 'about' :
+            about();
+            break;
+        case 'all' :
+            all();
+            break;
         default :
             lost();
     }

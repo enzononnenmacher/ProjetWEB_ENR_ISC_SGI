@@ -52,10 +52,10 @@
             
             <ul class="right chevron">
               <li><a href="index.php?action=home">Home</a></li>
-              <li><a href="index.php?action=all">all</a></li>
+              <li><a href="index.php?action=all">All</a></li>
               <li><a href="index.php?action=about">About</a></li>
-              <li><a href="index.php?action=login">login</a></li>
-              <li><a href="index.php?action=register">register</a></li>
+              <li><a href="index.php?action=login">Login</a></li>
+              <li><a href="index.php?action=register">Register</a></li>
             </ul>
           </div>
         </div>
