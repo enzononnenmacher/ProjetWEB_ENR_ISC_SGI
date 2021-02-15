@@ -21,6 +21,9 @@ if (isset($_GET['action'])) {
         case 'all' :
             all();
             break;
+        case 'createAd' :
+            createAd();
+            break;
         default :
             lost();
     }

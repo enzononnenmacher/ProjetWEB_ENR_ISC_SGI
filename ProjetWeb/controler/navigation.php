@@ -20,4 +20,7 @@ function lost(){
     require "view/lost.php";
 }
 
+function createAd(){
+    require "view/createAd.php";
+}
 

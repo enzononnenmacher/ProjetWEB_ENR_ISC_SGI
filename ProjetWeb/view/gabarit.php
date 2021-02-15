@@ -56,6 +56,7 @@
               <li><a href="index.php?action=about">About</a></li>
               <li><a href="index.php?action=login">Login</a></li>
               <li><a href="index.php?action=register">Register</a></li>
+              <li><a href="index.php?action=createAd">Créer une annonce</a></li>
             </ul>
           </div>
         </div>
