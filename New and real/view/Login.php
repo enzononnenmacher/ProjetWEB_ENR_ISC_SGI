@@ -56,7 +56,7 @@ ob_start();
                                 <div class="line">
                                     <div class="margin">
                                         <div class="s-12 m-12 l-6">
-                                            <form action='index.php?action=register' method='POST'>
+                                            <form action='../index.php?action=login' method='POST'>
                                                 <div class="form-group">
                                                     <label for="Email">Email *</label>
                                                     <input class="form-control" type="text" name="inputUserEmailAddress"

@@ -52,24 +52,14 @@ ob_start();
               <!-- Contact Form -->
               <div class="s-12 m-12 l-6">
                 <h2 class="text-uppercase text-strong margin-bottom-30">Enregistrement</h2>
-                <form class="customform">
+                <form class="customform" action="../index.php?action=register" method="post">
                   <div class="line">
                     <div class="margin">
                       <div class="s-12 m-12 l-6">
                         <div class="form-group">
-                          <label for="userName">User Name *</label>
-                          <input class="form-control" type="text" name="userName" id="userName" aria-describedby="userNameHelp" placeholder="Enter user name" required>
-                          <small class="form-text text-muted" id="userNameHelp">User Name will not be shared.</small>
-                        </div>
-                        <div class="form-group">
                           <label for="inputEmail">Email address *</label>
                           <input class="form-control" type="email" name="inputUserEmailAddress" id="inputEmail" aria-describedby="emailHelp" placeholder="firstname@domain.ch" required>
                           <small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="inputBirthday">Date de naissance *</label>
-                          <input class="form-control" type="date" name="Date" id="inputBirthday" aria-describedby="birthdayHelp" placeholder="Enter your birthday" required>
-                          <small class="form-text text-muted" id="birthdayHelp">Birthday will not be shared.</small>
                         </div>
                         <div class="form-group">
                           <label for="inputPassword">Password *</label>
