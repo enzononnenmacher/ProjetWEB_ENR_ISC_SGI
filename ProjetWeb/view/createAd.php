@@ -65,15 +65,15 @@ ob_start();
                                                 <input class="form-control" name="inputAddress" id="inputAddress" placeholder="Adresse" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputConfirmPassword">Description de l'appartement *</label>
+                                                <label for="inputDescription">Description de l'appartement *</label>
                                                 <input class="form-control" type="text" name="inputDescription" id="inputDescription" placeholder="Description" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputConfirmPassword">Date de disponibilité *</label>
+                                                <label for="inputAvailableDate">Date de disponibilité *</label>
                                                 <input class="form-control" type="date" name="inputAvailableDate" id="inputAvailableDate" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputConfirmPassword">Photos de l'appartement *</label>
+                                                <label for="inputPictures">Photos de l'appartement *</label>
                                                 <input class="form-control" type="file" name="inputPictures" id="inputPictures" placeholder="Photos" required>
                                             </div>
                                         </div>
