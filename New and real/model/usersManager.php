@@ -1,4 +1,20 @@
 <?php
+/**
+ * @file      usersManager.php
+ * @brief     This model is designed to implements users business logic
+ * @author    Created by Pascal.BENZONANA
+ * @author    Updated by Nicolas.GLASSEY
+ * @version   13-APR-2020
+ */
+
+/**
+ * @brief This function is designed to verify user's login
+ * @param $userEmailAddress : must be meet RFC 5321/5322
+ * @param $userPsw : users's password
+ * @return bool : "true" only if the user and psw match the database. In all other cases will be "false".
+ * @throws ModelDataBaseException : will be throw if something goes wrong with the database opening process
+ */
+
 function getUsers()
 {
     //Cette fonction renvoie un tableau avec les users
