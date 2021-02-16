@@ -52,7 +52,7 @@ ob_start();
                         <!-- Contact Form -->
                         <div class="s-12 m-12 l-6">
                             <h2 class="text-uppercase text-strong margin-bottom-30">Se connecter</h2>
-                            <form class="customform">
+                            <form class="customform" action='index.php?action=login' method='POST'>
                                 <div class="line">
                                     <div class="margin">
                                         <div class="s-12 m-12 l-6">
@@ -60,7 +60,7 @@ ob_start();
                                                 <div class="form-group">
                                                     <label for="Email">Email *</label>
                                                     <input class="form-control" type="text" name="inputUserEmailAddress"
-                                                           id="userName" aria-describedby="userNameHelp"
+                                                           id="Email" aria-describedby="userNameHelp"
                                                            placeholder="Enter user name" required>
                                                 </div>
                                                 <div class="form-group">
@@ -79,6 +79,7 @@ ob_start();
                                         </div>
                                     </div>
                                 </div>
+                            </form>
         </article>
         <div class="background-primary padding text-center">
             <a href="/"><i class="icon-facebook_circle icon2x text-white"></i></a>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -54,8 +55,13 @@
               <li><a href="index.php?action=home">Home</a></li>
               <li><a href="index.php?action=all">All</a></li>
               <li><a href="index.php?action=about">About</a></li>
-              <li><a href="index.php?action=login">Login</a></li>
-              <li><a href="index.php?action=register">Register</a></li>
+                <?php if(isset($_SESSION['userEmailAddress'])): ?>
+                    <li><a href="index.php?action=login">logout</a></li>
+                    <li><a href="index.php?action=register">user</a></li>
+                <?php elseif(!isset($_SESSION['userEmailAddress'])): ?>
+                    <li><a href="index.php?action=login">Login</a></li>
+                    <li><a href="index.php?action=register">Register</a></li>
+                <?php endif; ?>
               <li><a href="index.php?action=createAd">Créer une annonce</a></li>
             </ul>
           </div>
