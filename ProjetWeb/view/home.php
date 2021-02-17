@@ -21,7 +21,7 @@ ob_start();
             <div class="carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-wide-arrows">
                 <div class="item">
                     <div class="s-12 center">
-                        <img src="img/01-boxed.jpg" alt="">
+                        <img src="view/img/01-boxed.jpg" alt="">
                         <div class="carousel-content">
                             <div class="padding-2x">
                                 <div class="s-12 m-12 l-8">
@@ -36,7 +36,7 @@ ob_start();
                 </div>
                 <div class="item">
                     <div class="s-12 center">
-                        <img src="img/02-boxed.jpg" alt="">
+                        <img src="view/img/02-boxed.jpg" alt="">
                         <div class="carousel-content">
                             <div class="padding-2x">
                                 <div class="s-12 m-12 l-8">
@@ -58,21 +58,21 @@ ob_start();
         <div class="line">
             <div class="margin">
                 <div class="s-12 m-12 l-4 margin-m-bottom">
-                    <img class="margin-bottom" src="img/appartement/1.jpg" alt="">
+                    <img class="margin-bottom" src="view/img/appartement/1.jpg" alt="">
                     <h2 class="text-thin">Bonne chambre</h2>
                     <h2 class="text-thin"><strong>200 CHF</strong></h2>
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
                     <a class="text-more-info text-primary-hover" href="/">Read more</a>
                 </div>
                 <div class="s-12 m-12 l-4 margin-m-bottom">
-                    <img class="margin-bottom" src="img/appartement/2.jpg" alt="">
+                    <img class="margin-bottom" src="view/img/appartement/2.jpg" alt="">
                     <h2 class="text-thin">Grande salle de vie</h2>
                     <h2 class="text-thin"><strong>730 CHF</strong></h2>
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
                     <a class="text-more-info text-primary-hover" href="/">Read more</a>
                 </div>
                 <div class="s-12 m-12 l-4 margin-m-bottom">
-                    <img class="margin-bottom" src="img/appartement/3.jpg" alt="">
+                    <img class="margin-bottom" src="view/img/appartement/3.jpg" alt="">
                     <h2 class="text-thin">Chambre avec grand lit</h2>
                     <h2 class="text-thin"><strong>390 CHF</strong></h2>
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
