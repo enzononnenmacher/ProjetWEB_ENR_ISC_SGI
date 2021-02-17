@@ -66,3 +66,30 @@ function registerNewAccount($userEmailAddress, $userPsw)
     updateUsers($users);
     return true;
 }
+function menu(){
+    $top='     <li><a href="../index.php?action=home">Home</a></li>
+              <li><a href="../index.php?action=all">All</a></li>
+              <li><a href="../index.php?action=about">About</a></li>
+              ';
+
+    if (isset($_SESSION['UserEmailAddress'])) {
+        $bot='
+        <li>
+                        <a href="../index.php?action=articlesAdmin">Gestion</a>
+                    </li>
+
+                    <li>
+                        <a href="../index.php?action=logout">Logout</a>
+                    </li>';
+
+    }else{
+        $bot = '<li>
+                        <a href="../index.php?action=login">Login</a>
+                    </li>
+                    <li>
+                        <a href="../index.php?action=register">Register</a>
+                    </li>';
+    }
+
+    return $top.$bot;
+}

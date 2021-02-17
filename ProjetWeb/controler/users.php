@@ -35,7 +35,7 @@ function login($loginRequest)
             require_once "model/usersManager.php";
             if (isLoginCorrect($userEmailAddress, $userPsw)) {
                 $loginErrorMessage = null;
-                createSession($userEmailAddress);
+                $_SESSION['userEmailAddress'] = $userEmailAddress;
                 require "view/home.php";
             } else { //if the user/psw does not match, login form appears again with an error message
                 $loginErrorMessage = "L'adresse email et/ou le mot de passe ne correspondent pas !";
@@ -46,6 +46,7 @@ function login($loginRequest)
         }
     } catch (ModelDataBaseException $ex) {
         $loginErrorMessage = "Nous rencontrons actuellement un problème technique. Il est temporairement impossible de s'annoncer. Désolé du dérangement !";
+        $_SESSION['userEmailAddress'] = null;
         require "view/login.php";
     }
 }
@@ -79,7 +80,7 @@ function register($registerRequest)
             if ($userPsw == $userPswRepeat) {
                 require_once "model/usersManager.php";
                 if (registerNewAccount($userEmailAddress, $userPsw)) {
-                    createSession($userEmailAddress);
+                    $_SESSION['userEmailAddress'] = $userEmailAddress;
                     $registerErrorMessage = null;
                     require "view/home.php";
                 } else {
@@ -99,3 +100,4 @@ function register($registerRequest)
         require "view/register.php";
     }
 }
+

@@ -56,8 +56,8 @@
               <li><a href="index.php?action=all">All</a></li>
               <li><a href="index.php?action=about">About</a></li>
                 <?php if(isset($_SESSION['userEmailAddress'])): ?>
-                    <li><a href="index.php?action=login">logout</a></li>
-                    <li><a href="index.php?action=register">user</a></li>
+                    <li><a href="index.php?action=logout">logout</a></li>
+                    <li><a href="index.php?action=user">user</a></li>
                 <?php elseif(!isset($_SESSION['userEmailAddress'])): ?>
                     <li><a href="index.php?action=login">Login</a></li>
                     <li><a href="index.php?action=register">Register</a></li>
