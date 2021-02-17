@@ -27,30 +27,9 @@
   </head>  
   
   <body class="size-1140">
-  	<!-- PREMIUM FEATURES BUTTON -->
   	    <!-- HEADER -->
     <header role="banner">    
-      <!-- Top Bar -->
-      <div class="top-bar hide-s hide-m background-white">
-        <div class="line">
-          <div class="s-12 m-6 l-6">
-            <div class="top-bar-contact">
-              <p class="text-size-12">Contact Us: 0800 200 200 | <a class="text-orange-hover" href="mailto:contact@sampledomain.com">contact@sampledomain.com</a></p>
-            </div>
-          </div>
-          <div class="s-12 m-6 l-6">
-            <div class="right">
-              <ul class="top-bar-social right">
-                <li><a href="/"><i class="icon-facebook_circle text-orange-hover"></i></a></li>
-                <li><a href="/"><i class="icon-twitter_circle text-orange-hover"></i></a> </li>
-                <li><a href="/"><i class="icon-google_plus_circle text-orange-hover"></i></a></li>
-                <li><a href="/"><i class="icon-instagram_circle text-orange-hover"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+
       <!-- Top Navigation -->
       <nav class="background-white background-primary-hightlight">
         <div class="line">
@@ -65,7 +44,7 @@
               <li><a href="index.php?action=about">About</a></li>
                 <?php if(isset($_SESSION['userEmailAddress'])): ?>
                     <li><a href="index.php?action=logout">logout</a></li>
-                    <li><a href="index.php?action=user">user</a></li>
+                    <li><a href="index.php?action=user"><?php echo $_SESSION['userEmailAddress'] ?> </a></li>
                 <?php elseif(!isset($_SESSION['userEmailAddress'])): ?>
                     <li><a href="index.php?action=login">Login</a></li>
                     <li><a href="index.php?action=register">Register</a></li>
