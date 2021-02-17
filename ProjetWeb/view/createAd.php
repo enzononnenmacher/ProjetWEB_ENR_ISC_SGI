@@ -80,6 +80,10 @@ ob_start();
                                                 <label for="inputPictures">Photos de l'appartement *</label>
                                                 <input class="form-control" type="file" name="inputPictures" id="inputPictures" placeholder="Photos" required>
                                             </div>
+                                            <div class="form-group">
+                                                <label for="inputPrice">Prix *</label>
+                                                <input class="form-control" type="number" name="inputPrice" id="inputPrice" placeholder="Price" required>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="s-12 m-12 l-4"><button class="submit-form button background-primary border-radius text-white" type="submit">Créer l'annonce</button></div>
