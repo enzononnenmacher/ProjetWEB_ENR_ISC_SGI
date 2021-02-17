@@ -1,26 +1,41 @@
 <?php
 
+/**
+ * @File : navigation.php
+ * @Brief : Uses functions to display pages
+ * @Author : Created by Shanshe GUNDISHVILI
+ * @Author : Updated by Kevin VAUCHER
+ * @Version : 17-02-2021
+ */
 
-function home(){
+
+// Calls home page
+function home()
+{
     require "view/home.php";
 }
 
-
-function all(){
+// Calls gallery page
+function all()
+{
     require "view/all.php";
 }
 
-
-function about(){
+// Calls about page
+function about()
+{
     require "view/about.php";
 }
 
-
-function lost(){
+// Calls the default lost page
+function lost()
+{
     require "view/lost.php";
 }
 
-function createAd(){
+// Calls the page to create an ad
+function createAd()
+{
     require "view/createAd.php";
 }
 

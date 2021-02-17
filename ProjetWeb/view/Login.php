@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * @File : login.php
+ * @Brief : Displays login page
+ * @Author : Created by Shanshe GUNDISHVILI
+ * @Author : Updated by Kevin VAUCHER
+ * @Version : 17-02-2021
+ */
+
+
 $title = 'Contacts';
 
 ob_start();
