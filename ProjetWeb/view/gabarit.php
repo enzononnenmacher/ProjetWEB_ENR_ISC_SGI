@@ -39,15 +39,15 @@
           <div class="top-nav s-12 l-10">
             
             <ul class="right chevron">
-              <li><a href="index.php?action=home">Home</a></li>
-              <li><a href="index.php?action=all">All</a></li>
-              <li><a href="index.php?action=about">About</a></li>
+              <li><a href="index.php?action=home">Accueil</a></li>
+              <li><a href="index.php?action=all">Annonces</a></li>
+              <li><a href="index.php?action=about">A propos</a></li>
                 <?php if(isset($_SESSION['userEmailAddress'])): ?>
-                    <li><a href="index.php?action=logout">logout</a></li>
+                    <li><a href="index.php?action=logout">Déconnexion</a></li>
                     <li><a href="index.php?action=user"><?php echo $_SESSION['userEmailAddress'] ?> </a></li>
                 <?php elseif(!isset($_SESSION['userEmailAddress'])): ?>
-                    <li><a href="index.php?action=login">Login</a></li>
-                    <li><a href="index.php?action=register">Register</a></li>
+                    <li><a href="index.php?action=login">Connection</a></li>
+                    <li><a href="index.php?action=register">S'inscire</a></li>
                 <?php endif; ?>
               <li><a href="index.php?action=createAd">Créer une annonce</a></li>
             </ul>
