@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * @File : createAd
+ * @Brief : Displays ad creation page
+ * @Author : Created by Kevin VAUCHER
+ * @Author : Updated by Enzo Nonnenmacher
+ * @Version : 17-02-2021
+ */
+
+
 $title = 'Créer une annonce ';
 
 ob_start();

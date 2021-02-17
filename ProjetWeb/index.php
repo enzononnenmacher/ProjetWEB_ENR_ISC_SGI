@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * @File : index.php
+ * @Brief : Calls functions from controllers to display the right pages
+ * @Author : Created by Shanshe GUNDISHVILI
+ * @Author : Updated by Kevin VAUCHER
+ * @Version : 17-02-2021
+ */
+
+
 require "controler/users.php";
 require "controler/navigation.php";
 

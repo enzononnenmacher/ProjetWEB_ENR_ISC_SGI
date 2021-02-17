@@ -1,4 +1,12 @@
-
+<?php
+/**
+ * @File : gabarit.php
+ * @Brief : Displays gabarit on every page
+ * @Author : Created by Shanshe GUNDISHVILI
+ * @Author : Updated by Kevin VAUCHER
+ * @Version : 17-02-2021
+ */
+?>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
