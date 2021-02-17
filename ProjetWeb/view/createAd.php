@@ -62,7 +62,11 @@ ob_start();
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputAddress">Adresse *</label>
-                                                <input class="form-control" name="inputAddress" id="inputAddress" placeholder="Adresse" required>
+                                                <input class="form-control" type="text" name="inputAddress" id="inputAddress" placeholder="Adresse" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputNPA">Code postal *</label>
+                                                <input class="form-control" type="number" name="inputNPA" id="inputNPA" placeholder="NPA" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputDescription">Description de l'appartement *</label>
