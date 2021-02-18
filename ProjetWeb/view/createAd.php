@@ -62,7 +62,7 @@ ob_start();
                         <!-- Contact Form -->
                         <div class="s-12 m-12 l-6">
                             <h2 class="text-uppercase text-strong margin-bottom-30">Formulaire</h2>
-                            <form class="customform" action="../index.php?action=home" method="POST">
+                            <form class="customform" action="../index.php?action=annonce" method="POST">
                                 <div class="line">
                                     <div class="margin">
                                         <div class="s-12 m-12 l-6">

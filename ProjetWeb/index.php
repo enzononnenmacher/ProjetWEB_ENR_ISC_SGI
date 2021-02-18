@@ -8,7 +8,7 @@
  * @Version : 17-02-2021
  */
 
-
+require "controler/annonce.php";
 require "controler/users.php";
 require "controler/navigation.php";
 
@@ -38,6 +38,10 @@ if (isset($_GET['action'])) {
         case 'createAd' :
             createAd();
             break;
+        case 'annonce' :
+            annonce($_POST);
+            break;
+
         default :
             lost();
     }
