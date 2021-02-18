@@ -9,11 +9,14 @@
  */
 
 
+// Calls controllers to call the right pages
 require "controler/users.php";
 require "controler/navigation.php";
 
+// Creates session
 session_start();
 
+// Reads what page the user is on then calls the function the call the right page to display it
 if (isset($_GET['action'])) {
     $action = $_GET['action'];
     switch ($action) {
