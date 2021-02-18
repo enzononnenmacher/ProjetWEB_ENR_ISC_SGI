@@ -77,6 +77,11 @@ ob_start();
                                                     <label for="inputPassword">Password *</label>
                                                     <input class="form-control" type="password" name="inputUserPsw"
                                                            id="inputPassword" placeholder="Password" required>
+                                                    <?php if(isset($loginErrorMessage)): ?>
+                                                        <p>Mot de passe et/ou email incorrect</p>
+                                                    <?php elseif(!isset($loginErrorMessage)): ?>
+
+                                                    <?php endif; ?>
                                                 </div>
                                                 <div>
                                                     <div class="s-12 m-12 l-4">

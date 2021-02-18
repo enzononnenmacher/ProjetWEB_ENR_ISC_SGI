@@ -86,6 +86,11 @@ ob_start();
                                             </div>
                                         </div>
                                     </div>
+                                    <?php if(isset($registerErrorMessage)): ?>
+                                        <p>Adresse email déjà utilisé</p>
+                                    <?php elseif(!isset($registerErrorMessage)): ?>
+
+                                    <?php endif; ?>
                                     <div class="s-12 m-12 l-4">
                                         <button class="submit-form button background-primary border-radius text-white"
                                                 type="submit">S'enregistrer
