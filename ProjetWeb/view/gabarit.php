@@ -46,8 +46,8 @@
                     <li><a href="index.php?action=logout">Déconnexion</a></li>
                     <li><a href="index.php?action=user"><?php echo $_SESSION['userEmailAddress'] ?> </a></li>
                 <?php elseif(!isset($_SESSION['userEmailAddress'])): ?>
-                    <li><a href="index.php?action=login">Connection</a></li>
-                    <li><a href="index.php?action=register">S'inscire</a></li>
+                    <li><a href="index.php?action=login">Connexion</a></li>
+                    <li><a href="index.php?action=register">S'inscrire</a></li>
                 <?php endif; ?>
               <li><a href="index.php?action=createAd">Créer une annonce</a></li>
             </ul>
