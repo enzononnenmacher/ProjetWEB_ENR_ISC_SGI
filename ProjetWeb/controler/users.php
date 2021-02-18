@@ -1,22 +1,27 @@
 <?php
 
 /**
- * @File : users.php
- * @Brief : This controller is designed to manage all users actions
- * @Author : Created by Pascal.BENZONANA
- * @Author : Updated by Nicolas.GLASSEY
- * @Version : 13-04-2020
+ * @file      users.php
+ * @brief     This controller is designed to manage all users actions
+ * @author    Created by Pascal.BENZONANA
+ * @author    Updated by Nicolas.GLASSEY
+ * @version   13-APR-2020
  */
 
 
-// Create the session with the email address
+/**
+ * @brief This function is designed to create a new user session
+ * @param $userEmailAddress : user unique id, must be meet RFC 5321/5322
+ */
 function createSession($userEmailAddress)
 {
     $_SESSION['userEmailAddress'] = $userEmailAddress;
 }
 
-
-// Check if the login informations are correct
+/**
+ * @brief This function is designed to manage login request
+ * @param $loginRequest containing login fields required to authenticate the user
+ */
 function login($loginRequest)
 {
     //if login request was submitted
@@ -26,17 +31,17 @@ function login($loginRequest)
             $userEmailAddress = $loginRequest['inputUserEmailAddress'];
             $userPsw = $loginRequest['inputUserPsw'];
 
-            //try to check if username and password are matching with the database
+            //try to check if user/psw are matching with the database
             require_once "model/usersManager.php";
             if (isLoginCorrect($userEmailAddress, $userPsw)) {
                 $loginErrorMessage = null;
                 $_SESSION['userEmailAddress'] = $userEmailAddress;
                 require "view/home.php";
-            } else { // if the username and password do not match, login form appears again with an error message
+            } else { //if the user/psw does not match, login form appears again with an error message
                 $loginErrorMessage = "L'adresse email et/ou le mot de passe ne correspondent pas !";
                 require "view/login.php";
             }
-        } else { // the user does not yet fill the form
+        } else { //the user does not yet fill the form
             require "view/login.php";
         }
     } catch (ModelDataBaseException $ex) {
@@ -46,8 +51,19 @@ function login($loginRequest)
     }
 }
 
+/*function registerCheck($email){
 
-// Destroys session to log out
+
+
+*/
+
+
+
+
+/**
+ * @brief This function is designed to manage logout request
+ * @remark In case of login, the user session will be destroyed.
+ */
 function logout()
 {
     $_SESSION = array();
@@ -55,15 +71,17 @@ function logout()
     require "view/home.php";
 }
 
-
-// Function to register
+/**
+ * @brief This function is designed manage the register request
+ * @param $registerRequest : contains all fields mandatory and optional to register a new user (coming from a form)
+ */
 function register($registerRequest)
 {
     try {
-        // variable set
+        //variable set
         if (isset($registerRequest['inputUserEmailAddress']) && isset($registerRequest['inputUserPsw']) && isset($registerRequest['inputUserPswRepeat'])) {
 
-            // extract register parameters
+            //extract register parameters
             $userEmailAddress = $registerRequest['inputUserEmailAddress'];
             $userPsw = $registerRequest['inputUserPsw'];
             $userPswRepeat = $registerRequest['inputUserPswRepeat'];
