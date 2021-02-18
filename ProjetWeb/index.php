@@ -9,9 +9,11 @@
  */
 
 
+// Calls controllers to call the right pages
 require "controler/users.php";
 require "controler/navigation.php";
 
+// Creates session
 session_start();
 
 if (isset($_GET['action'])) {
