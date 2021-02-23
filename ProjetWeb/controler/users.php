@@ -97,7 +97,7 @@ function register($registerRequest)
                     require "view/register.php";
                 }
             } else {
-                $registerErrorMessage = "Les mots de passe ne sont pas similaires !";
+                $registerPswErrorMessage = "Les mots de passe ne sont pas similaires !";
                 require "view/register.php";
             }
         } else {

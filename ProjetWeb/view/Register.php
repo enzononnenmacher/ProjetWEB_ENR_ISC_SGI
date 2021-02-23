@@ -87,10 +87,15 @@ ob_start();
                                         </div>
                                     </div>
                                     <?php if(isset($registerErrorMessage)): ?>
-                                        <p>Adresse email déjà utilisé</p>
+                                        <p>Email déjà utilisé</p>
                                     <?php elseif(!isset($registerErrorMessage)): ?>
+                                        <?php if(isset($registerPswErrorMessage)): ?>
+                                            <p>Mot de passe identique</p>
+                                        <?php elseif(!isset($registerPswErrorMessage)): ?>
 
+                                        <?php endif; ?>
                                     <?php endif; ?>
+
                                     <div class="s-12 m-12 l-4">
                                         <button class="submit-form button background-primary border-radius text-white"
                                                 type="submit">S'enregistrer
