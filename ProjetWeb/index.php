@@ -41,7 +41,9 @@ if (isset($_GET['action'])) {
         case 'annonce' :
             annonce($_POST);
             break;
-
+        case 'contact' :
+            contact();
+            break;
         default :
             lost();
     }

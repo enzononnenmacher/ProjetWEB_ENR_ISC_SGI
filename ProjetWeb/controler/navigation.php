@@ -39,3 +39,9 @@ function createAd()
     require "view/createAd.php";
 }
 
+// Calls home page
+function contact()
+{
+    require "view/contact.php";
+}
+
