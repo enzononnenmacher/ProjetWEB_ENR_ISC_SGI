@@ -88,7 +88,7 @@ ob_start();
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputPictures">Photos de l'appartement *</label>
-                                                <input class="form-control" type="file" name="inputPictures" id="inputPictures" placeholder="Photos" required>
+                                                <input class="form-control" type="file" name="inputPictures" id="inputPictures" placeholder="Photos" required multiple>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputPrice">Prix *</label>
