@@ -44,6 +44,9 @@ if (isset($_GET['action'])) {
         case 'contact' :
             contact();
             break;
+        case 'myAd' :
+            myAd();
+            break;
         default :
             lost();
     }

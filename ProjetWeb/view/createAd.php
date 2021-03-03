@@ -84,7 +84,7 @@ ob_start();
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputAvailableDate">Date de disponibilité *</label>
-                                                <input class="form-control" type="date" name="inputAvailableDate" id="inputAvailableDate" required>
+                                                <input class="form-control" type="date" name="inputAvailableDate" id="inputAvailableDate" min="2021-01-01" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputPictures">Photos de l'appartement *</label>

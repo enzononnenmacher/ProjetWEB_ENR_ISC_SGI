@@ -4,3 +4,7 @@ function annonce($data){
     annonceToJson($data);
     require "view/home.php";
 }
+
+function myAd(){
+    require "viev/myAd.php";
+}
