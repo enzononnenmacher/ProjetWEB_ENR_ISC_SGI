@@ -48,4 +48,3 @@ function myAd()
 {
     require "view/myAd.php";
 }
-
