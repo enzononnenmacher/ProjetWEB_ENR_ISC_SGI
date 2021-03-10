@@ -15,3 +15,20 @@ function annonceToJson($data)
 
     file_put_contents("data/annonce.json", json_encode($arr));
 }
+
+function deleteAnn($IDToDel){
+
+    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
+
+    foreach ($arrayDef as $article){
+        $count = 0;
+        $count++;
+
+        if($article['ID']==$IDToDel){
+            $article['active']=false;
+        }
+    }
+
+
+    file_put_contents("data/annonce.json", json_encode($arrayDef));
+}

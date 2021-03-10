@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="added ID mechanisme">
+    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented and fixed ID in Json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/annonce.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/annonce.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/annonceManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/annonceManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       <workItem from="1614862065169" duration="634000" />
       <workItem from="1615187619023" duration="17000" />
       <workItem from="1615187671385" duration="8587000" />
-      <workItem from="1615381276242" duration="2323000" />
+      <workItem from="1615381276242" duration="4843000" />
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
@@ -74,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615196013485</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented and fixed ID in Json">
+      <created>1615383882886</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615383882886</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all modified" />
     <MESSAGE value="added ID mechanisme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ID mechanisme" />
+    <MESSAGE value="implemented and fixed ID in Json" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented and fixed ID in Json" />
   </component>
 </project>
