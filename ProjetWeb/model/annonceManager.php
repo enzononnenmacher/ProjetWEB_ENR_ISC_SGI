@@ -16,3 +16,11 @@ function annonceToJson($data)
 
 }
 
+function jsonToAnnonce()
+{
+    $ann[] =json_decode(file_get_contents("data/annonce.json"),true);
+
+    return $ann;
+
+}
+

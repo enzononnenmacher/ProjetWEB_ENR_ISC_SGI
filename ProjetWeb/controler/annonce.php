@@ -4,3 +4,12 @@ function annonce($data){
     annonceToJson($data);
     require "view/home.php";
 }
+
+
+// Calls gallery page
+function all()
+{
+    require "model/annonceManager.php";
+    $articles = jsonToAnnonce();
+    require "view/all.php";
+}
