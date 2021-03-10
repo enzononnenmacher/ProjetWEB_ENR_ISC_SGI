@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/all.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/all.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/createAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/createAd.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +57,7 @@
       <workItem from="1614862065169" duration="634000" />
       <workItem from="1615187619023" duration="17000" />
       <workItem from="1615187671385" duration="7953000" />
+      <workItem from="1615381417243" duration="1758000" />
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
@@ -86,16 +87,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all modified" />
     <option name="LAST_COMMIT_MESSAGE" value="all modified" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/index.php</url>
-          <line>34</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
