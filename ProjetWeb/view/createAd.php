@@ -83,7 +83,7 @@ ob_start();
                                                 <input class="form-control" type="text" name="inputCity" id="inputCity" placeholder="Ville" required>
                                             </div>
                                             <div>
-                                                <label for="inputNameAnnonce">Nom de l'annonce</label>
+                                                <label for="inputNameAnnonce">Nom de l'annonce *</label>
                                                 <input class="form-control" type="text" name="inputNameAnnonce" id="inputNameAnnonce" placeholder="Nom de l'annonce" required>
                                             </div>
                                             <div class="form-group">
