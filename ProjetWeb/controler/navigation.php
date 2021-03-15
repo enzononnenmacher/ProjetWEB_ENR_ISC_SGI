@@ -15,12 +15,6 @@ function home()
     require "view/home.php";
 }
 
-// Calls gallery page
-function all()
-{
-    require "view/all.php";
-}
-
 // Calls about page
 function about()
 {

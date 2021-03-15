@@ -78,6 +78,14 @@ ob_start();
                                                 <label for="inputNPA">Code postal *</label>
                                                 <input class="form-control" type="number" name="inputNPA" id="inputNPA" placeholder="NPA" required>
                                             </div>
+                                            <div>
+                                                <label for="inputCity">Ville *</label>
+                                                <input class="form-control" type="text" name="inputCity" id="inputCity" placeholder="Ville" required>
+                                            </div>
+                                            <div>
+                                                <label for="inputNameAnnonce">Nom de l'annonce *</label>
+                                                <input class="form-control" type="text" name="inputNameAnnonce" id="inputNameAnnonce" placeholder="Nom de l'annonce" required>
+                                            </div>
                                             <div class="form-group">
                                                 <label for="inputDescription">Description de l'appartement *</label>
                                                 <input class="form-control" type="text" name="inputDescription" id="inputDescription" placeholder="Description" required>
