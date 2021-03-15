@@ -2,33 +2,74 @@
 
 function annonceToJson($data)
 {
-    $arr[] =json_decode(file_get_contents("data/annonce.json"),true);
-    $last = end($arr);
-    $lastID = $last['ID'] +1;
+   $arr[] =json_decode(file_get_contents("data/annonce.json"),true);
+
+    $count = 0;
+    foreach ($arr as $rand){
+        $count++;
+    }
 
 
-    $data['Email']= $_SESSION['userEmailAddress'];
-    $data['active'] = true;
-    $data['ID']= $lastID;
-    $arr[$lastID]=$data;
+
+
+    $new['Email']= $_SESSION['userEmailAddress'];
+    $new['active'] = true;
+    $new['ID']= $count;
+
+
+//    $arr[$count]=$data;
+    array_push($data, $new['Email']);
+    array_push($data, $new['active']);
+    array_push($data, $new['ID']);
+    array_push($arr, $data);
 
 
     file_put_contents("data/annonce.json", json_encode($arr));
 }
 
-function deleteAnn($IDToDel){
+
+function deleteAnn($IDToDEL){
 
     $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
-
+    $count = 0;
     foreach ($arrayDef as $article){
-        $count = 0;
         $count++;
 
-        if($article['ID']==$IDToDel){
+        if($article['ID']==$IDToDEL){
             $article['active']=false;
+            $toPut = $article;
         }
     }
 
+    $arrayDef[$count] = $toPut;
 
     file_put_contents("data/annonce.json", json_encode($arrayDef));
+}
+
+
+
+function modifAnn($toInsert, $IDToDEL){
+
+    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
+    $count = 0;
+    foreach ($arrayDef as $article){
+        $count++;
+
+        if($article['ID']==$IDToDEL){
+            $article=$toInsert;
+            $toPut = $article;
+        }
+    }
+
+    $arrayDef[$count] = $toPut;
+
+    file_put_contents("data/annonce.json", json_encode($arrayDef));
+}
+
+function jsonToAnnonce(){
+
+    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
+
+
+    return $arrayDef;
 }
