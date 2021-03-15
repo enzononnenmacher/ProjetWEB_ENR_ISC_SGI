@@ -47,6 +47,9 @@ if (isset($_GET['action'])) {
         case 'myAd' :
             myAd();
             break;
+        case 'adDetails' :
+            adDetails();
+            break;
         default :
             lost();
     }
