@@ -17,10 +17,9 @@ function annonceToJson($data)
     $new['ID']= $count;
 
 
-//    $arr[$count]=$data;
-    array_push($data, $new['Email']);
-    array_push($data, $new['active']);
-    array_push($data, $new['ID']);
+    $data['Email'] =$new['Email'];
+    $data['active'] =$new['active'];
+    $data['active'] =$new['ID'];
     array_push($arr, $data);
 
 
