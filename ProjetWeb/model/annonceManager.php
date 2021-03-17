@@ -2,7 +2,7 @@
 
 function annonceToJson($data)
 {
-   $arr[] =json_decode(file_get_contents("data/annonce.json"),true);
+   $arr = json_decode(file_get_contents("data/annonce.json"),true);
 
     $count = 0;
     foreach ($arr as $rand){
