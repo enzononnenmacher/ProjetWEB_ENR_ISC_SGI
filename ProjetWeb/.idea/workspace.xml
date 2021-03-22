@@ -71,6 +71,7 @@
       <workItem from="1615717876934" duration="13000" />
       <workItem from="1615719004560" duration="1963000" />
       <workItem from="1615983749831" duration="4858000" />
+      <workItem from="1616398672895" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
@@ -101,6 +102,12 @@
     <MESSAGE value="all modified" />
     <MESSAGE value="implemented better json Encode" />
     <option name="LAST_COMMIT_MESSAGE" value="implemented better json Encode" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616398689657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616398689657" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
