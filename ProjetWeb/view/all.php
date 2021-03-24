@@ -27,6 +27,7 @@ ob_start();
 
 
                         <?php foreach($articles as $article) :?>
+
                             <div class="s-12 m-6 l-3">
                             <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
                                 <img src="../view/img/bio.png" alt="" title="Image principale de l'annonce"/>
@@ -37,6 +38,7 @@ ob_start();
                                 <?=$article['inputPrice']; ?> CHF<br>
                                 <?=$article['inputCity']; ?><br>
                         </div>
+
                         <?php endforeach; ?>
 
                     </div>
