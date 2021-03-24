@@ -13,3 +13,15 @@ function all()
     $articles = jsonToAnnonce();
     require "view/all.php";
 }
+
+function modifyC($dataM)
+{
+    if(isset($dataM)){
+    require "model/annonceManager.php";
+    modify($dataM);
+    require "view/myAd.php";
+    }
+    else{
+        require "view/modifyAd.php";
+    }
+}

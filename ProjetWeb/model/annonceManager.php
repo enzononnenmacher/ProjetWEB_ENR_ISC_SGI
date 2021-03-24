@@ -22,7 +22,7 @@ function annonceToJson($data)
 
     $data['Email'] =$new['Email'];
     $data['active'] =$new['active'];
-    $data['active'] =$new['ID'];
+    $data['ID'] =$new['ID'];
     array_push($arr, $data);
 
 
@@ -32,11 +32,12 @@ function annonceToJson($data)
 
 function deleteAnn($IDToDEL){
 
-    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
-    $count = 0;
+    $toPut['eee'] ="aweqw";
+    $arrayDef['eee'] ="aweqw";
+    $arrayDef = json_decode(file_get_contents("data/annonce.json"),true);
+    $count=0;
     foreach ($arrayDef as $article){
         $count++;
-
         if($article['ID']==$IDToDEL){
             $article['active']=false;
             $toPut = $article;
@@ -50,27 +51,22 @@ function deleteAnn($IDToDEL){
 
 
 
-function modifAnn($toInsert, $IDToDEL){
-
-    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
-    $count = 0;
-    foreach ($arrayDef as $article){
-        $count++;
-
-        if($article['ID']==$IDToDEL){
+function modify($toInsert){
+    $arrayDef['eee'] ="aweqw";
+    $arrayDef =json_decode(file_get_contents("data/annonce.json"),true);
+    foreach ($arrayDef[0] as $article){
+        if($article['ID']==$toInsert['ID']){
             $article=$toInsert;
-            $toPut = $article;
         }
     }
 
-    $arrayDef[$count] = $toPut;
 
     file_put_contents("data/annonce.json", json_encode($arrayDef));
 }
 
 function jsonToAnnonce(){
 
-    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
+    $arrayDef =json_decode(file_get_contents("data/annonce.json"),true);
 
 
     return $arrayDef;

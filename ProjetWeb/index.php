@@ -44,8 +44,11 @@ if (isset($_GET['action'])) {
         case 'contact' :
             contact();
             break;
-        case 'myAd' :
+        case 'myAds' :
             myAd();
+            break;
+        case 'myAd' :
+                modifyC($_POST);
             break;
         case 'adDetails' :
             adDetails();

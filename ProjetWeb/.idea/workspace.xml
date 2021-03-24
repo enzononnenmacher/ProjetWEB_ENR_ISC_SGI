@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented better json Encode">
+    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented better json Encode 18.03.2021 last version">
+      <change afterPath="$PROJECT_DIR$/view/modifyAd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controler/annonce.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/annonce.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/annonce.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/annonce.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/annonce2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/annonceManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/annonceManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +72,9 @@
       <workItem from="1615187671385" duration="7953000" />
       <workItem from="1615717876934" duration="13000" />
       <workItem from="1615719004560" duration="1963000" />
-      <workItem from="1615983749831" duration="4858000" />
+      <workItem from="1615983749831" duration="8382000" />
+      <workItem from="1616397039356" duration="3308000" />
+      <workItem from="1616589324350" duration="4497000" />
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
@@ -79,7 +83,35 @@
       <option name="project" value="LOCAL" />
       <updated>1615188393078</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented better json Encode 17.03.2021">
+      <created>1615988837500</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615988837500</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implemented better json Encode 17.03.2021 last version">
+      <created>1615989820028</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615989820028</updated>
+    </task>
+    <task id="LOCAL-00004" summary="implemented better json Encode 18.03.2021 last version">
+      <created>1616076171990</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616076171990</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implemented better json Encode 18.03.2021 last version">
+      <created>1616076295509</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616076295509</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,15 +132,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all modified" />
     <MESSAGE value="implemented better json Encode" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented better json Encode" />
+    <MESSAGE value="implemented better json Encode 17.03.2021" />
+    <MESSAGE value="implemented better json Encode 17.03.2021 last version" />
+    <MESSAGE value="implemented better json Encode 18.03.2021 last version" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented better json Encode 18.03.2021 last version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/model/annonceManager.php</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
+          <line>56</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/model/annonceManager.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
