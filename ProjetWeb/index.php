@@ -45,7 +45,7 @@ if (isset($_GET['action'])) {
             contact();
             break;
         case 'myAd' :
-            myAd();
+            myAd($_SESSION['userEmailAddress']);
             break;
         case 'adDetails' :
             adDetails();
