@@ -62,21 +62,21 @@ ob_start();
                     <h2 class="text-thin">Bonne chambre</h2>
                     <h2 class="text-thin"><strong>200 CHF</strong></h2>
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                    <a class="text-more-info text-primary-hover" href="index.php?action=adDetails">Read more</a>
+                    <a class="text-more-info text-primary-hover" href="/">Read more</a>
                 </div>
                 <div class="s-12 m-12 l-4 margin-m-bottom">
                     <img class="margin-bottom" src="view/img/appartement/2.jpg" alt="">
                     <h2 class="text-thin">Grande salle de vie</h2>
                     <h2 class="text-thin"><strong>730 CHF</strong></h2>
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                    <a class="text-more-info text-primary-hover" href="index.php?action=adDetails">Read more</a>
+                    <a class="text-more-info text-primary-hover" href="/">Read more</a>
                 </div>
                 <div class="s-12 m-12 l-4 margin-m-bottom">
                     <img class="margin-bottom" src="view/img/appartement/3.jpg" alt="">
                     <h2 class="text-thin">Chambre avec grand lit</h2>
                     <h2 class="text-thin"><strong>390 CHF</strong></h2>
                     <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-                    <a class="text-more-info text-primary-hover" href="index.php?action=adDetails">Read more</a>
+                    <a class="text-more-info text-primary-hover" href="/">Read more</a>
                 </div>
             </div>
         </div>

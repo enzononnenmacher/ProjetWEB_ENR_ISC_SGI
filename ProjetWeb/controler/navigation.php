@@ -39,10 +39,7 @@ function contact()
     require "view/contact.php";
 }
 
-function myAd()
-{
-    require "view/myAd.php";
-}
+
 
 function adDetails(){
     require "view/adDetails.php";

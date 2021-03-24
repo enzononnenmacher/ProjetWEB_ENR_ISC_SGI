@@ -13,3 +13,10 @@ function all()
     $articles = jsonToAnnonce();
     require "view/all.php";
 }
+
+function myAd($email)
+{
+    require "model/annonceManager.php";
+    $articles = jsonToMyAnnonce($email);
+    require "view/myAd.php";
+}

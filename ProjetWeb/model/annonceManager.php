@@ -22,7 +22,7 @@ function annonceToJson($data)
 
     $data['Email'] =$new['Email'];
     $data['active'] =$new['active'];
-    $data['active'] =$new['ID'];
+    $data['ID'] =$new['ID'];
     array_push($arr, $data);
 
 
@@ -64,7 +64,6 @@ function modifAnn($toInsert, $IDToDEL){
     }
 
     $arrayDef[$count] = $toPut;
-
     file_put_contents("data/annonce.json", json_encode($arrayDef));
 }
 
@@ -73,5 +72,23 @@ function jsonToAnnonce(){
     $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
 
 
-    return $arrayDef;
+    return $arrayDef[0];
+}
+
+function jsonToMyAnnonce($email){
+
+    $arr['eee'] ="aweqw";
+    $arr = json_decode(file_get_contents("data/annonce.json"),true);
+    $count= 0;
+
+    foreach ($arr as $ann){
+       if ($ann['Email']==$email){
+
+           $resArr[$count] = $ann;
+           $count ++;
+       }
+    }
+
+
+    return $resArr;
 }
