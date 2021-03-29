@@ -38,9 +38,3 @@ function contact()
 {
     require "view/contact.php";
 }
-
-
-
-function adDetails(){
-    require "view/adDetails.php";
-}

@@ -14,14 +14,15 @@ function all()
     require "view/all.php";
 }
 
-function modifyC($dataM)
+function myAd($email)
 {
-    if(isset($dataM)){
     require "model/annonceManager.php";
-    modify($dataM);
+    $articles = jsonToMyAnnonce($email);
     require "view/myAd.php";
-    }
-    else{
-        require "view/modifyAd.php";
-    }
+}
+
+function adDetails(){
+    require "model/annonceManager.php";
+    $detail = detailForAd();
+    require "view/adDetails.php";
 }

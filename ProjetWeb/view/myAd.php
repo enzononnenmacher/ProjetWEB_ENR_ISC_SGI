@@ -26,20 +26,14 @@ ob_start();
 
 
                         <?php foreach($articles as $article) :?>
-
-                            <div class="s-12 m-6 l-3">
-                                <div class="image-with-hover-overlay image-hover-zoom margin-bottom">
-                                    <img src="../view/img/bio.png" alt="" title="Image principale de l'annonce"/>
-                                </div>
+                            <div class="s-12 m-12 l-4 margin-m-bottom div-row">
+                                <img src="view/img/appartement/1.jpg" alt="">
+                                <br><a href="/"><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>
+                                <a><?=$article['inputPrice']; ?> CHF</a><br>
+                                <a><?=$article['inputCity']; ?></a><br><br>
                             </div>
-                            <div class="s-12 m-6 l-3">
-                                <br><strong><?=$article['inputNameAnnonce']; ?></strong><br>
-                                <?=$article['inputPrice']; ?> CHF<br>
-                                <?=$article['inputCity']; ?><br>
-                            </div>
-
-
                         <?php endforeach; ?>
+
 
                     </div>
 

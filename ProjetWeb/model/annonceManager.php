@@ -71,3 +71,41 @@ function jsonToAnnonce(){
 
     return $arrayDef;
 }
+
+function jsonToMyAnnonce($email){
+
+    $arr['eee'] ="aweqw";
+    $arr = json_decode(file_get_contents("data/annonce.json"),true);
+    $count= 0;
+
+    foreach ($arr as $ann){
+        if ($ann['Email']==$email){
+
+            $resArr[$count] = $ann;
+            $count ++;
+        }
+    }
+
+
+    return $resArr;
+}
+
+
+
+/*
+function detailForAd(){
+    $details[] = "";
+    $details = json_decode(file_get_contents("data/annonce.json"),true);
+    $Count= 0;
+
+    foreach($details as $detail){
+        if($detail['ID']==){
+
+            $detAd[$Count] = $detail;
+            $Count ++;
+        }
+    }
+
+    return $detAd;
+}
+*/
