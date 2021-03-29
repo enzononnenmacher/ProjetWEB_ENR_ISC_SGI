@@ -51,15 +51,14 @@ function deleteAnn($IDToDEL){
 
 
 
-function modify($toInsert){
+function modify($toInsert,$ID){
     $arrayDef['eee'] ="aweqw";
     $arrayDef =json_decode(file_get_contents("data/annonce.json"),true);
-    foreach ($arrayDef[0] as $article){
+    foreach ($arrayDef as $article){
         if($article['ID']==$toInsert['ID']){
             $article=$toInsert;
         }
     }
-
 
     file_put_contents("data/annonce.json", json_encode($arrayDef));
 }

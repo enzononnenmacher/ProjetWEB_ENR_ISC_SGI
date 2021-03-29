@@ -45,10 +45,11 @@ if (isset($_GET['action'])) {
             contact();
             break;
         case 'myAds' :
-            myAd();
+            myAd($_POST);
             break;
         case 'myAd' :
-                modifyC($_POST);
+            modifyC($_POST, $_
+            GET['ID']);
             break;
         case 'adDetails' :
             adDetails();

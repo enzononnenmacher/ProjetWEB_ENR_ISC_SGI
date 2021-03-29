@@ -26,3 +26,16 @@ function adDetails(){
     $detail = detailForAd();
     require "view/adDetails.php";
 }
+
+
+function modifyC($dataM, $ID)
+{
+    if(isset($dataM)){
+        require "model/annonceManager.php";
+        modify($dataM, $ID);
+        require "view/myAd.php";
+    }
+    else{
+        require "view/modifyAd.php";
+    }
+}
