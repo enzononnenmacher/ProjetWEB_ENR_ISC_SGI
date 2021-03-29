@@ -92,20 +92,3 @@ function jsonToMyAnnonce($email){
 
 
 
-/*
-function detailForAd(){
-    $details[] = "";
-    $details = json_decode(file_get_contents("data/annonce.json"),true);
-    $Count= 0;
-
-    foreach($details as $detail){
-        if($detail['ID']==){
-
-            $detAd[$Count] = $detail;
-            $Count ++;
-        }
-    }
-
-    return $detAd;
-}
-*/
