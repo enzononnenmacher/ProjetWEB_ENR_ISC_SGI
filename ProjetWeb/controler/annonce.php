@@ -20,3 +20,9 @@ function myAd($email)
     $articles = jsonToMyAnnonce($email);
     require "view/myAd.php";
 }
+
+function adDetails(){
+    require "model/annonceManager.php";
+    $detail = detailForAd();
+    require "view/adDetails.php";
+}

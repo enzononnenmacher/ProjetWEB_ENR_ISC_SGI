@@ -11,6 +11,8 @@ $title = "Détails";
 ob_start();
 ?>
 
+<?=$article['inputPrice']; ?> CHF<br>
+
 <?php
 $content = ob_get_clean();
 require "gabarit.php";
