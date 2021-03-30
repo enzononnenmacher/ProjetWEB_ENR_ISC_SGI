@@ -33,6 +33,8 @@ ob_start();
                                     <a href="index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>
                                     <?=$article['inputPrice']; ?> CHF<br>
                                     <?=$article['inputCity']; ?><br><br>
+                                    <a href="index.php?action=modifAd&ID=<?= $article['ID']; ?>">Modifier</a>
+                                    <a href="index.php?action=deleteAd&ID=<?= $article['ID']; ?>">Supprimer</a>
                                 </a>
                             </div>
                         <?php endforeach; ?>
