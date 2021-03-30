@@ -14,11 +14,12 @@ $title = 'my ads';
 ob_start();
 ?>
 
+    <!-- MAIN -->
     <main role="main">
         <!-- Content -->
         <article>
             <header class="section background-primary text-center">
-                <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Mes Annonces</h1>
+                <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Annonces</h1>
             </header>
             <div class="section background-white">
                 <div class="line">
@@ -27,13 +28,14 @@ ob_start();
 
                         <?php foreach($articles as $article) :?>
                             <div class="s-12 m-12 l-4 margin-m-bottom div-row">
-                                <img src="view/img/appartement/1.jpg" alt="">
-                                <br><a href="/"><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>
-                                <a><?=$article['inputPrice']; ?> CHF</a><br>
-                                <a><?=$article['inputCity']; ?></a><br><br>
+                                <a>
+                                    <img src="view/img/appartement/1.jpg" alt="">
+                                    <a href="index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>
+                                    <?=$article['inputPrice']; ?> CHF<br>
+                                    <?=$article['inputCity']; ?><br><br>
+                                </a>
                             </div>
                         <?php endforeach; ?>
-
 
                     </div>
 

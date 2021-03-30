@@ -27,7 +27,7 @@ ob_start();
             </div>
             <div>
                 <font size="6"><font ><?=$article['inputDescription']; ?></font></font><br>
-
+                <a href="mailto:<?=$article['Email']; ?>">Envoyer un message à l'annonceur</a>
             </div>
         </div>
     </div>

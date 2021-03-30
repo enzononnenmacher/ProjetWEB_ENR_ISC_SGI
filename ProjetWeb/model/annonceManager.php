@@ -87,6 +87,9 @@ function jsonToMyAnnonce($email){
            $resArr[$count] = $ann;
            $count ++;
        }
+       else{
+           require_once "view/createAd.php";
+       }
     }
 
 
