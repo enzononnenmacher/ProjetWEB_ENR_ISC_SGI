@@ -21,8 +21,8 @@ function myAd($email)
     require "view/myAd.php";
 }
 
-function adDetails(){
+function adDetails($ID){
     require "model/annonceManager.php";
-    $detail = detailForAd();
+    $article = detailForAd($ID);
     require "view/adDetails.php";
 }

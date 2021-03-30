@@ -69,12 +69,11 @@ function annonceToJson($data)
 
 function deleteAnn($IDToDEL){
 
-    $toPut['eee'] ="aweqw";
-    $arrayDef['eee'] ="aweqw";
-    $arrayDef = json_decode(file_get_contents("data/annonce.json"),true);
-    $count=0;
+    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
+    $count = 0;
     foreach ($arrayDef as $article){
         $count++;
+
         if($article['ID']==$IDToDEL){
             $article['active']=false;
             $toPut = $article;
@@ -88,25 +87,29 @@ function deleteAnn($IDToDEL){
 
 
 
-function modify($toInsert){
-    $arrayDef['eee'] ="aweqw";
-    $arrayDef =json_decode(file_get_contents("data/annonce.json"),true);
-    foreach ($arrayDef[0] as $article){
-        if($article['ID']==$toInsert['ID']){
+function modifAnn($toInsert, $IDToDEL){
+
+    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
+    $count = 0;
+    foreach ($arrayDef as $article){
+        $count++;
+
+        if($article['ID']==$IDToDEL){
             $article=$toInsert;
+            $toPut = $article;
         }
     }
 
-
+    $arrayDef[$count] = $toPut;
     file_put_contents("data/annonce.json", json_encode($arrayDef));
 }
 
 function jsonToAnnonce(){
 
-    $arrayDef =json_decode(file_get_contents("data/annonce.json"),true);
+    $arrayDef[] =json_decode(file_get_contents("data/annonce.json"),true);
 
 
-    return $arrayDef;
+    return $arrayDef[0];
 }
 
 function jsonToMyAnnonce($email){
@@ -116,11 +119,11 @@ function jsonToMyAnnonce($email){
     $count= 0;
 
     foreach ($arr as $ann){
-        if ($ann['Email']==$email){
+       if ($ann['Email']==$email){
 
-            $resArr[$count] = $ann;
-            $count ++;
-        }
+           $resArr[$count] = $ann;
+           $count ++;
+       }
     }
 
 
@@ -128,4 +131,18 @@ function jsonToMyAnnonce($email){
 }
 
 
+function detailForAd($ID){
+    $details['dfghj'] = "ghjkl";
+    $details = json_decode(file_get_contents("data/annonce.json"),true);
+
+    foreach($details as $detail){
+        if($detail['ID']==$ID['ID']){
+
+            $detAd = $detail;
+
+        }
+    }
+
+    return $detAd;
+}
 

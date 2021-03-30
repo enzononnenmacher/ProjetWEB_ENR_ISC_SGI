@@ -1129,3 +1129,18 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
 .div-row{
 
 }
+
+.img{
+  width: 500px;
+  height: 350px;
+}
+
+.row1{
+  width: 50%;
+  float: left;
+}
+
+.row2{
+  width: 50%;
+  float: right;
+}

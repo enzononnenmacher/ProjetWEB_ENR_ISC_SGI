@@ -44,14 +44,11 @@ if (isset($_GET['action'])) {
         case 'contact' :
             contact();
             break;
-        case 'myAds' :
-            myAd();
-            break;
         case 'myAd' :
-                modifyC($_POST);
+            myAd($_SESSION['userEmailAddress']);
             break;
         case 'adDetails' :
-            adDetails();
+            adDetails($_GET);
             break;
         default :
             lost();

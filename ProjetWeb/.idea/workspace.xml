@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented better json Encode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controler/annonce.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/annonce.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/annonce.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/annonce.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/annonceManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/annonceManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/all.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/all.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/createAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/createAd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/adDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/responsee.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/css/responsee.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../151" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,8 +81,7 @@
       <workItem from="1616857346672" duration="5214000" />
       <workItem from="1616922719774" duration="5324000" />
       <workItem from="1616946582608" duration="1211000" />
-      <workItem from="1617000688416" duration="1570000" />
-      <workItem from="1617083993637" duration="2918000" />
+      <workItem from="1616998462731" duration="6707000" />
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
@@ -111,16 +112,5 @@
     <MESSAGE value="all modified" />
     <MESSAGE value="implemented better json Encode" />
     <option name="LAST_COMMIT_MESSAGE" value="implemented better json Encode" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/model/annonceManager.php</url>
-          <line>108</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
