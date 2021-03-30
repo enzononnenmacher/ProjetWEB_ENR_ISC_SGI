@@ -1,4 +1,50 @@
 <?php
+
+function imageSave($ID){
+
+    $fileName = $_FILES['inputPictures']['name'];
+    $fileTmpName = $_FILES['inputPictures']['tmp_name'];
+    $fileSize = $_FILES['inputPictures']['size'];
+    $fileError = $_FILES['inputPictures']['error'];
+
+    $tmpFileExt = explode('.', $fileName);
+    $fileExt = strtolower(end($tmpFileExt));
+
+    $allowed = array('jpeg', 'jpg', 'png');
+
+
+    $fName =     $fName = $_SESSION['userEmailAddress']."-".$ID;;
+
+    if (in_array($fileExt, $allowed)) {
+        if ($fileError === 0) {
+            if ($fileSize < 1000000) {
+                $fileNameNew = $fName . "." . $fileExt;
+                $fileDestination = "data/images/" . $fileNameNew;
+                move_uploaded_file($fileTmpName, $fileDestination);
+            } else {
+
+                echo "le fichier est trop grand!";
+            }
+        } else {
+            echo "il y a eu une erreur lors du chargement!";
+        }
+    } else {
+        echo "vous ne pouvez pas uploader des fichiers de ce type!";
+    }
+
+
+
+
+    return $fileDestination;
+
+
+
+
+}
+
+
+
+
 /*
  * to insert information and images
  *
@@ -16,54 +62,25 @@ function annonceToJson($data)
         }
     }
 
-
     $new['Email'] = $_SESSION['userEmailAddress'];
     $new['active'] = true;
     $new['ID'] = $count;
 
 
-    $file = $_FILES['inputPictures'];
-
-    $fileName = $_FILES['inputPictures']['name'];
-    $fileTmpName = $_FILES['inputPictures']['tmp_name'];
-    $fileSize = $_FILES['inputPictures']['size'];
-    $fileError = $_FILES['inputPictures']['error'];
-
-
-    $tmpFileExt = explode('.', $fileName);
-    $fileExt = strtolower(end($tmpFileExt));
-
-    $allowed = array('jpeg', 'jpg', 'png');
-
 
     $data['Email'] = $new['Email'];
     $data['active'] = $new['active'];
     $data['ID'] = $new['ID'];
-    $fileNameNew = $data['Email'] . "-" . $data['ID'] . "." . $fileExt;
-    $data['inputPictures'] = "data/images/" . $fileNameNew;
-
+    $filePlacement = imageSave($data['ID']);
+    $data['inputPictures'] = $filePlacement;
 
     array_push($arr, $data);
-
-
-    if (in_array($fileExt, $allowed)) {
-        if ($fileError === 0) {
-            if ($fileSize < 1000000) {
-                $fileNameNew = $data['Email'] . "-" . $data['ID'] . "." . $fileExt;
-                $fileDestination = "data/images/" . $fileNameNew;
-                move_uploaded_file($fileTmpName, $fileDestination);
-                file_put_contents("data/annonce.json", json_encode($arr));
-            } else {
-
-                echo "le fichier est trop grand!";
-            }
-        } else {
-            echo "il y a eu une erreur lors du chargement!";
-        }
-    } else {
-        echo "vous ne pouvez pas uploader des fichiers de ce type!";
-    }
+    file_put_contents("data/annonce.json", json_encode($arr));
 }
+
+
+
+
 
 /*
  *
@@ -100,8 +117,6 @@ function modifAnn($toInsert, $IDToDEL)
         if ($article['ID'] == $IDToDEL) {
 
 
-            $allowed = array('jpeg', 'jpg', 'png');
-
 
             $article['inputName'] = $toInsert['inputName'];
             $article['inputAddress'] = $toInsert['inputAddress'];
@@ -111,54 +126,21 @@ function modifAnn($toInsert, $IDToDEL)
             $article['inputDescription'] = $toInsert['inputDescription'];
             $article['inputAvailableDate'] = $toInsert['inputAvailableDate'];
             $article['inputPrice'] = $toInsert['inputPrice'];
-            $finalRes = $article;
-            $placeInArr = $count;
+
 
 
             if (isset($_FILES)) {
-                $fileName = $_FILES['inputPictures']['name'];
-                $fileTmpName = $_FILES['inputPictures']['tmp_name'];
-                $fileSize = $_FILES['inputPictures']['size'];
-                $fileError = $_FILES['inputPictures']['error'];
-
-
-                $tmpFileExt = explode('.', $fileName);
-                $fileExt = strtolower(end($tmpFileExt));
-
-                $fileNameNew = $_SESSION['userEmailAddress'] . "-" . $article['ID'] . "." . $fileExt;
-                $finalRes['inputPictures'] = "data/images/" . $fileNameNew;
-
-
-                if (in_array($fileExt, $allowed)) {
-                    if ($fileError === 0) {
-                        if ($fileSize < 1000000) {
-                            $fileNameNew = $article['Email'] . "-" . $article['ID'] . "." . $fileExt;
-                            $fileDestination = "data/images/" . $fileNameNew;
-                            move_uploaded_file($fileTmpName, $fileDestination);
-                            $arrayDef[$placeInArr] = $finalRes;
-                            file_put_contents("data/annonce.json", json_encode($arrayDef));
-                        } else {
-
-                            echo "le fichier est trop grand!";
-                        }
-                    } else {
-                        echo "il y a eu une erreur lors du chargement!";
-                    }
-                } else {
-                    echo "vous ne pouvez pas uploader des fichiers de ce type!";
-                }
+                $filePlacement = imageSave($IDToDEL);
+                $article['inputPictures'] = $filePlacement;
             }
-
-
-        }
-        else{
+            $finalRes = $article;
+            $placeInArr = $count;
             $arrayDef[$placeInArr] = $finalRes;
             file_put_contents("data/annonce.json", json_encode($arrayDef));
+
         }
         $count++;
     }
-
-
 }
 
 function jsonToAnnonce()
