@@ -27,10 +27,10 @@ ob_start();
 
                         <?php foreach($articles as $article) :?>
                             <div class="s-12 m-12 l-4 margin-m-bottom div-row">
-                                <img src="view/img/appartement/1.jpg" alt="">
-                                <br><a href="/"><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>
-                                <a><?=$article['inputPrice']; ?> CHF</a><br>
+                                <img src="<?=$article['inputPictures'];?>">
+                                <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>                                <a><?=$article['inputPrice']; ?> CHF</a><br>
                                 <a><?=$article['inputCity']; ?></a><br><br>
+                                <a class="text-more-info text-primary-hover" href="../index.php?action=modifAd&ID=<?= $article['ID']; ?>">Modify article</a>
                             </div>
                         <?php endforeach; ?>
 

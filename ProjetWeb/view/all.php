@@ -29,7 +29,7 @@ ob_start();
                         <?php foreach($articles as $article) :?>
                             <div class="s-12 m-12 l-4 margin-m-bottom div-row">
                                 <a>
-                                    <img src=<?=$article['inputPictures']; ?>>
+                                    <img src="<?=$article['inputPictures']; ?>">
                                     <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>
                                     <?=$article['inputPrice']; ?> CHF<br>
                                     <?=$article['inputCity']; ?><br><br>

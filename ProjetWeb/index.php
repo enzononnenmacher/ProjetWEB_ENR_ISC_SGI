@@ -50,6 +50,14 @@ if (isset($_GET['action'])) {
         case 'adDetails' :
             adDetails($_GET);
             break;
+        case 'modifAd' :
+            if(isset($_GET['code'])) {
+                modifyForm($_POST, $_GET['code']);
+            }
+            elseif (isset($_GET['ID'])){
+                modifyAnnonce($_GET['ID']);
+            }
+            break;
         default :
             lost();
     }

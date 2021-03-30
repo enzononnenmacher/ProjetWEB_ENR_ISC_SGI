@@ -26,3 +26,19 @@ function adDetails($ID){
     $article = detailForAd($ID);
     require "view/adDetails.php";
 }
+
+function modifyForm($data , $code)
+{
+
+    require "model/annonceManager.php";
+    modifAnn($data, $code);
+    $articles = jsonToMyAnnonce($_SESSION['userEmailAddress']);
+    require "view/myAd.php";
+}
+
+
+function modifyAnnonce($ID){
+        require "model/annonceManager.php";
+        $article = detailForAd($ID);
+        require "view/modifyAd.php";
+}
