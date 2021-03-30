@@ -74,7 +74,7 @@ function deleteAnn($IDToDEL)
 {
     $arrayDef['eee'] = "aweqw";
     $arrayDef = json_decode(file_get_contents("data/annonce.json"), true);
-    $count = 0;
+    $count = -1;
     foreach ($arrayDef as $article) {
         $count++;
         if ($article['ID'] == $IDToDEL) {
@@ -83,7 +83,7 @@ function deleteAnn($IDToDEL)
         }
     }
 
-    $arrayDef[$count] = $toPut;
+    $arrayDef[$count-1] = $toPut;
 
     file_put_contents("data/annonce.json", json_encode($arrayDef));
 }

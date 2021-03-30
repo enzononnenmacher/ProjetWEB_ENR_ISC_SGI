@@ -30,7 +30,8 @@ ob_start();
                                 <img src="<?=$article['inputPictures'];?>">
                                 <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>                                <a><?=$article['inputPrice']; ?> CHF</a><br>
                                 <a><?=$article['inputCity']; ?></a><br><br>
-                                <a class="text-more-info text-primary-hover" href="../index.php?action=modifAd&ID=<?= $article['ID']; ?>">Modify article</a>
+                                <a class="text-more-info text-primary-hover" href="../index.php?action=modifAd&ID=<?= $article['ID']; ?>">Modifier</a>
+                                <a class="text-more-info text-primary-hover" href="../index.php?action=deleteArticle&ID=<?= $article['ID']; ?>">Supprimer</a>
                             </div>
                         <?php endforeach; ?>
 

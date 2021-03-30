@@ -58,6 +58,9 @@ if (isset($_GET['action'])) {
                 modifyAnnonce($_GET['ID']);
             }
             break;
+        case 'deleteArticle' :
+            deleteArt($_GET['ID']);
+            break;
         default :
             lost();
     }
