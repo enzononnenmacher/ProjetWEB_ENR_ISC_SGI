@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented image upload">
-      <change afterPath="$PROJECT_DIR$/view/modifyAd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controler/annonce.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/annonce.php" afterDir="false" />
+    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented better json Encode">
       <change beforePath="$PROJECT_DIR$/data/annonce.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/annonce.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/annonceManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/annonceManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/all.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/all.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/myAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/myAd.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +16,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="5c47db95-de68-4f18-9a7d-51d6a36e87ed" name="localhost" port="888" />
@@ -84,9 +77,10 @@
       <workItem from="1616922719774" duration="5324000" />
       <workItem from="1616946582608" duration="1211000" />
       <workItem from="1616998462731" duration="6707000" />
-      <workItem from="1617090340581" duration="2111000" />
-      <workItem from="1617095677787" duration="4361000" />
-      <workItem from="1617109930168" duration="838000" />
+      <workItem from="1617085900346" duration="479000" />
+      <workItem from="1617086412606" duration="4146000" />
+      <workItem from="1617096774543" duration="331000" />
+      <workItem from="1617097173937" duration="144000" />
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
@@ -116,7 +110,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all modified" />
     <MESSAGE value="implemented better json Encode" />
-    <MESSAGE value="implemented image upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented image upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented better json Encode" />
   </component>
 </project>
