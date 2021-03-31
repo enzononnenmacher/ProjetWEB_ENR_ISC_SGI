@@ -48,7 +48,7 @@ if (isset($_GET['action'])) {
             myAd($_SESSION['userEmailAddress']);
             break;
         case 'adDetails' :
-            adDetails($_GET);
+            adDetails($_GET['ID']);
             break;
         case 'modifAd' :
             if(isset($_GET['code'])) {

@@ -12,14 +12,16 @@ function annonce($data){
 function all(){
 
     require "model/annonceManager.php";
-    $articles = jsonToAnnonce();
+    $temp = jsonToAnnonce();
+    $articles = array_reverse($temp);
     require "view/all.php";
 }
 
 function myAd($email){
 
     require "model/annonceManager.php";
-    $articles = jsonToMyAnnonce($email);
+    $temp = jsonToMyAnnonce($email);
+    $articles = array_reverse($temp);
     require "view/myAd.php";
 
 }
