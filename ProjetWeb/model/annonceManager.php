@@ -181,7 +181,7 @@ function detailForAd($ID)
     $details = json_decode(file_get_contents("data/annonce.json"), true);
 
     foreach ($details as $detail) {
-        if ($detail['ID'] == $ID['ID']) {
+        if ($detail['ID'] == $ID) {
 
             return $detail;
 
