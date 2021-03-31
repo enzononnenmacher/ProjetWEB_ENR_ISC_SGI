@@ -13,21 +13,22 @@ ob_start();
 <div class="section background-white">
     <div class="line">
         <div class="margin">
-
-            <font size="7"><font ><?=$article['inputNameAnnonce']; ?></font></font><br>
+            <a class="size-texte"><?=$article['inputNameAnnonce']; ?></a><br><br>
             <div class="row1">
-                <img src="<?=$article['inputPictures']; ?>" alt="" class="img">
+                <img class="imgDetail"src="<?=$article['inputPictures']; ?>">
             </div>
             <div class="row2">
-                <font size="6"><font ><?=$article['inputAvailableDate']; ?></font></font><br><br>
-                <font size="6"><font ><?=$article['inputPrice']; ?> CHF</font></font><br><br>
-                <font size="5"><font ><?=$article['inputNPA']; ?></font></font>
-                <font size="5"><font ><?=$article['inputCity']; ?></font></font><br><br>
-                <font size="5"><font ><?=$article['inputAddress']; ?></font></font><br><br>
+                <br><a class="size-texte2"><?=$article['inputAvailableDate']; ?></a><br><br>
+                <a class="size-texte2"><?=$article['inputPrice']; ?> CHF</a><br><br>
+                <a class="size-texte2"><?=$article['inputNPA']; ?></a>
+                <a class="size-texte2"><?=$article['inputCity']; ?></a><br><br>
+                <a class="size-texte2"><?=$article['inputAddress']; ?></a><br><br><br>
             </div>
-            <div>
-                <font size="6"><font ><?=$article['inputDescription']; ?></font></font><br>
-                <a href="mailto:<?=$article['Email']; ?>">Envoyer un message à l'annonceur</a>
+            <div class="row1">
+                <a class="size-texte2"><?=$article['inputDescription']; ?></a><br><br>
+            </div>
+            <div class="row2">
+                <a href="mailto:<?=$article['Email']; ?>" class="submit-form button background-primary border-radius text-white">Envoyer un message à l'annonceur</a>
             </div>
         </div>
     </div>

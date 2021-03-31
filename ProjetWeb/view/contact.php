@@ -19,80 +19,45 @@ ob_start();
         <!-- Content -->
         <article>
             <header class="section background-primary text-center">
-                <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Contact US</h1>
+                <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Contacter-nous</h1>
             </header>
             <div class="section background-white">
                 <div class="line">
                     <div class="margin">
 
                         <!-- Company Information -->
-                        <div class="s-12 m-12 l-6">
-                            <h2 class="text-uppercase text-strong margin-bottom-30">Company Information</h2>
+                        <div class="row1">
+                            <h2 class="text-uppercase text-strong margin-bottom-30">Information de l'entreprise</h2>
                             <div class="float-left">
                                 <i class="icon-placepin background-primary icon-circle-small text-size-20"></i>
                             </div>
                             <div class="margin-left-80 margin-bottom">
-                                <h4 class="text-strong margin-bottom-0">Company Address</h4>
-                                <p>Responsive Street 7<br>
-                                    London<br>
-                                    UK, Europe
+                                <h4 class="text-strong margin-bottom-0">Adresse</h4>
+                                <p>Avenue De La Gare 26<br>
+                                    Sainte-Croix<br>
+                                    Vaud, Switzerland
                                 </p>
                             </div>
+
                             <div class="float-left">
                                 <i class="icon-paperplane_ico background-primary icon-circle-small text-size-20"></i>
                             </div>
                             <div class="margin-left-80 margin-bottom">
                                 <h4 class="text-strong margin-bottom-0">E-mail</h4>
-                                <p>contact@sampledomain.com<br>
-                                    office@sampledomain.com
-                                </p>
+                                <p>Shanshe.Gundishvili@cpnv.ch<br><br></p>
                             </div>
+
                             <div class="float-left">
                                 <i class="icon-smartphone background-primary icon-circle-small text-size-20"></i>
                             </div>
                             <div class="margin-left-80">
                                 <h4 class="text-strong margin-bottom-0">Phone Numbers</h4>
-                                <p>0800 4521 800 50<br>
-                                    0450 5896 625 16<br>
-                                    0798 6546 465 15
-                                </p>
+                                <p>077 963 83 25</p>
                             </div>
                         </div>
-
-                        <!-- Contact Form -->
-                        <div class="s-12 m-12 l-6">
-                            <h2 class="text-uppercase text-strong margin-bottom-30">Contact Us</h2>
-                            <form class="customform">
-                                <div class="line">
-                                    <div class="margin">
-                                        <div class="s-12 m-12 l-6">
-                                            <input name="email" class="required email border-radius"
-                                                   placeholder="Your e-mail" title="Your e-mail" type="text"/>
-                                        </div>
-                                        <div class="s-12 m-12 l-6">
-                                            <input name="name" class="name border-radius" placeholder="Your name"
-                                                   title="Your name" type="text"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="s-12">
-                                    <input name="subject" class="subject border-radius" placeholder="Subject"
-                                           title="Subject" type="text"/>
-                                </div>
-                                <div class="s-12">
-                                    <label>
-                                        <textarea name="message" class="required message border-radius"
-                                                  placeholder="Your message" rows="3"></textarea>
-                                    </label>
-                                </div>
-                                <div class="s-12 m-12 l-4">
-                                    <button class="submit-form button background-primary border-radius text-white"
-                                            type="submit">Submit Button
-                                    </button>
-                                </div>
-                            </form>
+                        <div class="row2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.222466963225!2d6.499039744013124!3d46.81962010787476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478db87426529131%3A0xec2e6acb9c6b7910!2sAvenue%20de%20la%20Gare%2026%2C%201450%20Sainte-Croix!5e0!3m2!1sfr!2sch!4v1617213284581!5m2!1sfr!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
-                    </div>
                 </div>
             </div>
         </article>

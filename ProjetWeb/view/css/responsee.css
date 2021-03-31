@@ -1126,9 +1126,6 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
 }
 #map {z-index:1;}
 
-.div-row{
-
-}
 
 .img{
   width: 300px;
@@ -1149,3 +1146,17 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   width: 1116px;
   height: 397.45px;
 }
+
+.imgDetail{
+  width: 500px;
+  height: 300px;
+}
+
+.size-texte{
+  font-size: 70px;
+}
+
+.size-texte2{
+  font-size: 35px;
+}
+
