@@ -43,7 +43,6 @@
               <li><a href="index.php?action=home">Accueil</a></li>
               <li><a href="index.php?action=all">Annonces</a></li>
                 <li><a href="index.php?action=contact">Contact</a></li>
-              <li><a href="index.php?action=about">A propos</a></li>
                 <?php if(isset($_SESSION['userEmailAddress'])): ?>
                     <li><a href="index.php?action=logout">Déconnexion</a></li>
                     <li><a href="index.php?action=user"><?php echo $_SESSION['userEmailAddress'] ?> </a></li>
