@@ -1,5 +1,21 @@
 <?php
 
+/*
+ * author : Shanshe Gundishvili
+ * date : 03/01/2021
+ * Goal : to menage articles
+ */
+
+
+
+
+
+
+/*
+ * author : Shanshe Gundishvili
+ * date : 03/29/2021
+ * Goal : to save the info of images in Json and to save image in Directory
+ */
 function imageSave($ID){
 
     $fileName = $_FILES['inputPictures']['name'];
@@ -37,18 +53,16 @@ function imageSave($ID){
 
     return $fileDestination;
 
-
-
-
 }
 
 
 
 
 /*
- * to insert information and images
- *
- * */
+ * author : Shanshe Gundishvili
+ * date : 03/01/2021
+ * Goal : to save information filled by User
+ */
 function annonceToJson($data)
 {
 
@@ -80,10 +94,10 @@ function annonceToJson($data)
 
 
 /*
- *
- *
- *
- * */
+ * author : Shanshe Gundishvili
+ * date : 03/01/2021
+ * Goal : to delete or reactivate the article
+ */
 function deleteAnn($IDToDEL)
 {
     $arrayDef['eee'] = "aweqw";
@@ -109,7 +123,11 @@ function deleteAnn($IDToDEL)
     file_put_contents("data/annonce.json", json_encode($arrayDef));
 }
 
-
+/*
+ * author : Shanshe Gundishvili
+ * date : 03/01/2021
+ * Goal : to modify existing article
+ */
 function modifAnn($toInsert, $IDToDEL)
 {
     $arrayDef['eee'] = "aweqw";
@@ -147,6 +165,12 @@ function modifAnn($toInsert, $IDToDEL)
     }
 }
 
+
+/*
+ * author : Shanshe Gundishvili
+ * date : 03/01/2021
+ * Goal : to send saved information to view of all the articles
+ */
 function jsonToAnnonce()
 {
     $arrayDef['eee'] = "aweqw";
@@ -156,6 +180,12 @@ function jsonToAnnonce()
     return $arrayDef;
 }
 
+
+/*
+ * author : Shanshe Gundishvili
+ * date : 03/01/2021
+ * Goal : to only send the articles made by user that is logged in on the side by device
+ */
 function jsonToMyAnnonce($email)
 {
 
@@ -175,7 +205,11 @@ function jsonToMyAnnonce($email)
     return $resArr;
 }
 
-
+/*
+ * author : Shanshe Gundishvili
+ * date : 03/01/2021
+ * Goal : to only send one particular article's information
+ */
 function detailForAd($ID)
 {
     $details['dfghj'] = "ghjkl";

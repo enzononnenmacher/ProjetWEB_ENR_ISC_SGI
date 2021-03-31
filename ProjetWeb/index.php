@@ -4,7 +4,7 @@
  * @File : index.php
  * @Brief : Calls functions from controllers to display the right pages
  * @Author : Created by Shanshe GUNDISHVILI
- * @Author : Updated by Kevin VAUCHER
+ * @Author : Updated by Shanshe GUNDISHVILI
  * @Version : 17-02-2021
  */ 
 
