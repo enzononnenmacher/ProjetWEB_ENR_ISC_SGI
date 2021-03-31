@@ -44,15 +44,22 @@ if (isset($_GET['action'])) {
         case 'contact' :
             contact();
             break;
-        case 'myAds' :
-            myAd($_POST);
-            break;
         case 'myAd' :
-            modifyC($_POST, $_
-            GET['ID']);
+            myAd($_SESSION['userEmailAddress']);
             break;
         case 'adDetails' :
-            adDetails();
+            adDetails($_GET);
+            break;
+        case 'modifAd' :
+            if(isset($_GET['code'])) {
+                modifyForm($_POST, $_GET['code']);
+            }
+            elseif (isset($_GET['ID'])){
+                modifyAnnonce($_GET['ID']);
+            }
+            break;
+        case 'deleteArticle' :
+            deleteArt($_GET['ID']);
             break;
         default :
             lost();
