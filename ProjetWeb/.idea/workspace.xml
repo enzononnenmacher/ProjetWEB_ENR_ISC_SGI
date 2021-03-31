@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented deleting the articles">
-      <change beforePath="$PROJECT_DIR$/data/annonce.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/annonce.json" afterDir="false" />
+    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented directory images">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/annonceManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/annonceManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/myAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/myAd.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +84,8 @@
       <workItem from="1617096774543" duration="331000" />
       <workItem from="1617097173937" duration="144000" />
       <workItem from="1617127341818" duration="2135000" />
+      <workItem from="1617180133488" duration="1293000" />
+      <workItem from="1617191093653" duration="240000" />
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
@@ -97,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617111900235</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implemented directory images">
+      <created>1617177781102</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617177781102</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,14 +130,15 @@
     <MESSAGE value="all modified" />
     <MESSAGE value="implemented better json Encode" />
     <MESSAGE value="implemented deleting the articles" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented deleting the articles" />
+    <MESSAGE value="implemented directory images" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented directory images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/model/annonceManager.php</url>
-          <line>108</line>
+          <line>111</line>
           <properties>
             <option name="className" value="" />
             <option name="methodName" value="\modifAnn" />
@@ -141,6 +153,11 @@
             <option name="methodName" value="\annonceToJson" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/model/annonceManager.php</url>
+          <line>182</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

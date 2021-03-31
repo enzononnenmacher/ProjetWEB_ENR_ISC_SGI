@@ -79,9 +79,6 @@ function annonceToJson($data)
 }
 
 
-
-
-
 /*
  *
  *
@@ -95,7 +92,13 @@ function deleteAnn($IDToDEL)
     foreach ($arrayDef as $article) {
         $count++;
         if ($article['ID'] == $IDToDEL) {
-            $article['active'] = false;
+
+            if($article['active'] == true){
+            $article['active'] = false;}
+
+            if($article['active'] == false){
+                $article['active'] = true;}
+
             $toPut = $article;
         }
     }
@@ -178,7 +181,7 @@ function detailForAd($ID)
     $details = json_decode(file_get_contents("data/annonce.json"), true);
 
     foreach ($details as $detail) {
-        if ($detail['ID'] == $ID) {
+        if ($detail['ID'] == $ID['ID']) {
 
             return $detail;
 

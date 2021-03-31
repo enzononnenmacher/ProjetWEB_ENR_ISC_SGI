@@ -38,9 +38,8 @@ ob_start();
                                 <?php if($article['active'] == true): ?>
                                     <a class="text-more-info text-primary-hover" href="../index.php?action=deleteArticle&ID=<?= $article['ID']; ?>">Supprimer</a>
                                 <?php else: ?>
-                                    <a> Deleted</a>
+                                    <a class="text-more-info text-primary-hover" href="../index.php?action=deleteArticle&ID=<?= $article['ID']; ?>">Réactiver</a>
                                 <?php endif; ?>
-
                             </div>
                         <?php endforeach; ?>
                     </div>
