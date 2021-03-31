@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php echo $title ?></title>
+      <link rel="icon" href="view/img/logo/Logo.png">
     <link rel="stylesheet" href="view/css/components.css">
     <link rel="stylesheet" href="view/css/icons.css">
     <link rel="stylesheet" href="view/css/responsee.css">
@@ -34,7 +35,7 @@
       <nav class="background-white background-primary-hightlight">
         <div class="line">
           <div class="s-12 l-2">
-            <a href="gabarit.php" class="logo"><img src="img/logo-free.png" alt=""></a>
+            <a href="gabarit.php" class="logo"><img src="view/img/logo.png" alt=""></a>
           </div>
           <div class="top-nav s-12 l-10">
             
