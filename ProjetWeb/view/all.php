@@ -10,7 +10,7 @@
  */
 
 
-    $title = 'Annonces';
+$title = 'Annonces';
 
 ob_start();
 ?>
@@ -26,15 +26,17 @@ ob_start();
                     <div class="margin">
 
 
-                        <?php foreach($articles as $article) :?>
-                            <div class="s-12 m-12 l-4 margin-m-bottom div-row">
-                                <a>
-                                    <img src="<?=$article['inputPictures']; ?>" alt="" class="img">
-                                    <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?=$article['inputNameAnnonce']; ?></strong><br></a>
-                                    <?=$article['inputPrice']; ?> CHF<br>
-                                    <?=$article['inputCity']; ?><br><br>
-                                </a>
-                            </div>
+                        <?php foreach ($articles as $article) : ?>
+                            <?php if ($article['active'] == true) : ?>
+                                <div class="s-12 m-12 l-4 margin-m-bottom div-row">
+                                    <a>
+                                        <img src="<?= $article['inputPictures']; ?>" alt="" class="img">
+                                        <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?= $article['inputNameAnnonce']; ?></strong><br></a>
+                                        <?= $article['inputPrice']; ?> CHF<br>
+                                        <?= $article['inputCity']; ?><br><br>
+                                    </a>
+                                </div>
+                            <?php endif; ?>
                         <?php endforeach; ?>
 
                     </div>

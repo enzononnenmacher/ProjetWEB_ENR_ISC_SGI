@@ -56,7 +56,7 @@ function deleteArt($ID){
 
     require "model/annonceManager.php";
     deleteAnn($ID);
-    $articles = jsonToAnnonce();
-    require "view/modifyAd.php";
+    $articles = jsonToMyAnnonce($_SESSION['userEmailAddress']);
+    require "view/myAd.php";
 
 }

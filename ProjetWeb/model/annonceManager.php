@@ -88,22 +88,23 @@ function deleteAnn($IDToDEL)
 {
     $arrayDef['eee'] = "aweqw";
     $arrayDef = json_decode(file_get_contents("data/annonce.json"), true);
-    $count = -1;
+    $count = 0;
     foreach ($arrayDef as $article) {
-        $count++;
         if ($article['ID'] == $IDToDEL) {
 
             if($article['active'] == true){
-            $article['active'] = false;}
+                $arrayDef[$count]['active'] = false;
+            }
 
             if($article['active'] == false){
-                $article['active'] = true;}
-
-            $toPut = $article;
+                $arrayDef[$count]['active'] = true;
+            }
+        }else{
+            $count++;
         }
     }
 
-    $arrayDef[$count-1] = $toPut;
+
 
     file_put_contents("data/annonce.json", json_encode($arrayDef));
 }
@@ -132,7 +133,7 @@ function modifAnn($toInsert, $IDToDEL)
 
 
 
-            if (isset($_FILES)) {
+            if ($_FILES['inputPictures']['size']!= 0) {
                 $filePlacement = imageSave($IDToDEL);
                 $article['inputPictures'] = $filePlacement;
             }
