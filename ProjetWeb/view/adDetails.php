@@ -16,7 +16,7 @@ ob_start();
 
             <font size="7"><font ><?=$article['inputNameAnnonce']; ?></font></font><br>
             <div class="row1">
-                <img class="img" src="view/img/appartement/1.jpg" alt="">
+                <img src="<?=$article['inputPictures']; ?>" alt="" class="img">
             </div>
             <div class="row2">
                 <font size="6"><font ><?=$article['inputAvailableDate']; ?></font></font><br><br>
