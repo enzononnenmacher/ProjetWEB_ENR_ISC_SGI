@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @File : contact.php
  * @Brief : Displays contact page
@@ -7,7 +6,6 @@
  * @Author : Updated by Kevin VAUCHER
  * @Version : 17-02-2021
  */
-
 
 $title = 'my ads';
 
@@ -44,12 +42,12 @@ ob_start();
                             </div>
                         <?php endforeach; ?>
                     </div>
-
                 </div>
             </div>
         </article>
     </main>
 <?php
+
 $content = ob_get_clean();
 require 'gabarit.php';
 ?>
