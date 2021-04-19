@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="added comments on controller and model">
+    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented directory images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controler/annonce.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/annonce.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/annonce.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/annonce.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/annonceManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/annonceManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/myAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/myAd.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +16,23 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="5c47db95-de68-4f18-9a7d-51d6a36e87ed" name="localhost" port="888" />
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1otJgh0HTVnWIuidPlplCQ1t0We" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -91,12 +97,6 @@
       <workItem from="1617206949058" duration="1096000" />
       <workItem from="1617208837901" duration="2197000" />
       <workItem from="1617211490826" duration="2130000" />
-      <workItem from="1617215117541" duration="198000" />
-      <workItem from="1617215352614" duration="1694000" />
-      <workItem from="1617217119971" duration="1895000" />
-      <workItem from="1618477327289" duration="370000" />
-      <workItem from="1618739973431" duration="50000" />
-      <workItem from="1618740070757" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
@@ -119,21 +119,7 @@
       <option name="project" value="LOCAL" />
       <updated>1617177781102</updated>
     </task>
-    <task id="LOCAL-00004" summary="fixed bug with delete and copying items">
-      <created>1617217047359</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1617217047359</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added comments on controller and model">
-      <created>1617219021927</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1617219021928</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,9 +142,7 @@
     <MESSAGE value="implemented better json Encode" />
     <MESSAGE value="implemented deleting the articles" />
     <MESSAGE value="implemented directory images" />
-    <MESSAGE value="fixed bug with delete and copying items" />
-    <MESSAGE value="added comments on controller and model" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments on controller and model" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented directory images" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
