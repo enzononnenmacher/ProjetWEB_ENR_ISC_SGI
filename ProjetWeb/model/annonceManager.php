@@ -192,7 +192,6 @@ function jsonToMyAnnonce($email)
     $arr['eee'] = "aweqw";
     $arr = json_decode(file_get_contents("data/annonce.json"), true);
     $count = 0;
-    $resArr = 0;
 
 
     foreach ($arr as $ann) {
