@@ -193,6 +193,7 @@ function jsonToMyAnnonce($email)
     $arr = json_decode(file_get_contents("data/annonce.json"), true);
     $count = 0;
 
+
     foreach ($arr as $ann) {
         if ($ann['Email'] == $email) {
 
@@ -201,8 +202,10 @@ function jsonToMyAnnonce($email)
         }
     }
 
-
-    return $resArr;
+    if(isset($resArr)){
+    return $resArr;}else{
+    return null;
+    }
 }
 
 /*

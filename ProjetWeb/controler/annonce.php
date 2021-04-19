@@ -47,8 +47,12 @@ function myAd($email){
 
     require "model/annonceManager.php";
     $temp = jsonToMyAnnonce($email);
+    if(isset($temp)){
     $articles = array_reverse($temp);
     require "view/myAd.php";
+    } else{
+        require "view/createAd.php";
+    }
 
 }
 
