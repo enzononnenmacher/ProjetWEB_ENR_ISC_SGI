@@ -33,28 +33,23 @@ ob_start();
                             </div>
                             <div class="margin-left-80 margin-bottom">
                                 <h4 class="text-strong margin-bottom-0">Company Address</h4>
-                                <p>Responsive Street 7<br>
-                                    London<br>
-                                    UK, Europe
-                                </p>
+                                <p>Avenue De La Gare 26,<br>
+                                    Sainte-Croix, Vaud,<br>
+                                    Switzerland</p>
                             </div>
                             <div class="float-left">
                                 <i class="icon-paperplane_ico background-primary icon-circle-small text-size-20"></i>
                             </div>
                             <div class="margin-left-80 margin-bottom">
                                 <h4 class="text-strong margin-bottom-0">E-mail</h4>
-                                <p>contact@sampledomain.com<br>
-                                    office@sampledomain.com
-                                </p>
+                                <p>coloswiss@gmail.com</p><br><br>
                             </div>
                             <div class="float-left">
                                 <i class="icon-smartphone background-primary icon-circle-small text-size-20"></i>
                             </div>
                             <div class="margin-left-80">
-                                <h4 class="text-strong margin-bottom-0">Phone Numbers</h4>
-                                <p>0800 4521 800 50<br>
-                                    0450 5896 625 16<br>
-                                    0798 6546 465 15
+                                <h4 class="text-strong margin-bottom-0">Phone Number</h4>
+                                <p>079 895 91 73
                                 </p>
                             </div>
                         </div>

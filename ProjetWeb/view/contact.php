@@ -44,15 +44,15 @@ ob_start();
                             </div>
                             <div class="margin-left-80 margin-bottom">
                                 <h4 class="text-strong margin-bottom-0">E-mail</h4>
-                                <p>Shanshe.Gundishvili@cpnv.ch<br><br></p>
+                                <p>coloswiss@gmail.com<br><br></p>
                             </div>
 
                             <div class="float-left">
                                 <i class="icon-smartphone background-primary icon-circle-small text-size-20"></i>
                             </div>
                             <div class="margin-left-80">
-                                <h4 class="text-strong margin-bottom-0">Phone Numbers</h4>
-                                <p>077 963 83 25</p>
+                                <h4 class="text-strong margin-bottom-0">Phone Number</h4>
+                                <p>079 895 91 73</p>
                             </div>
                         </div>
                         <div class="row2">

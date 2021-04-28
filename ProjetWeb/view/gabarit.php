@@ -109,7 +109,7 @@
                   <i class="icon-mail text-primary text-size-12"></i>
                 </div>
                 <div class="s-11 m-11 l-11 margin-bottom-10">
-                  <p><a href="/" class="text-primary-hover"><b>E-mail:</b> Shanshe.Gundishvili@cpnv.ch</a></p>
+                  <p><a href="/" class="text-primary-hover"><b>E-mail:</b> coloswiss@gmail.com</a></p>
                 </div>
               </div>
               <div class="line">
@@ -117,7 +117,7 @@
                   <i class="icon-smartphone text-primary text-size-12"></i>
                 </div>
                 <div class="s-11 m-11 l-11 margin-bottom-10">
-                  <p><b>Phone:</b> 077 963 83 25</p>
+                  <p><b>Phone:</b> 079 895 91 73</p>
                 </div>
               </div>
               <div class="line">
@@ -125,7 +125,7 @@
                   <i class="icon-twitter text-primary text-size-12"></i>
                 </div>
                 <div class="s-11 m-11 l-11 margin-bottom-10">
-                  <p><a href="/" class="text-primary-hover"><b>Twitter</b></a></p>
+                  <p><a href="https://twitter.com/" class="text-primary-hover"><b>Twitter</b></a></p>
                 </div>
               </div>
               <div class="line">
@@ -133,7 +133,7 @@
                   <i class="icon-facebook text-primary text-size-12"></i>
                 </div>
                 <div class="s-11 m-11 l-11">
-                  <p><a href="/" class="text-primary-hover"><b>Facebook</b></a></p>
+                  <p><a href="https://www.facebook.com/" class="text-primary-hover"><b>Facebook</b></a></p>
                 </div>
               </div>
             </div>
