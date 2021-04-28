@@ -10,6 +10,9 @@ $title = "Détails";
 
 ob_start();
 ?>
+<header class="section background-primary text-center">
+    <h1 class="text-white margin-bottom-0 text-size-50 text-thin text-line-height-1">Détail de l'annonce</h1>
+</header>
 <div class="section background-white">
     <div class="line">
         <div class="margin">

@@ -35,7 +35,7 @@
       <nav class="background-white background-primary-hightlight">
         <div class="line">
           <div class="s-12 l-2">
-            <a href="gabarit.php" class="logo"><img src="view/img/logo.png" alt=""></a>
+            <a href="index.php?action=home"><img class="logo" src="view/img/logo/logo.png" alt=""></a>
           </div>
           <div class="top-nav s-12 l-10">
             
@@ -64,10 +64,10 @@
     <footer>
       <!-- Social -->
       <div class="background-primary padding text-center">
-        <a href="/"><i class="icon-facebook_circle icon2x text-white"></i></a> 
-        <a href="/"><i class="icon-twitter_circle icon2x text-white"></i></a>
-        <a href="/"><i class="icon-google_plus_circle icon2x text-white"></i></a>
-        <a href="/"><i class="icon-instagram_circle icon2x text-white"></i></a>                                                                        
+        <a href="https://www.facebook.com/"><i class="icon-facebook_circle icon2x text-white"></i></a>
+        <a href="https://twitter.com/"><i class="icon-twitter_circle icon2x text-white"></i></a>
+        <a href="https://plus.google.com/"><i class="icon-google_plus_circle icon2x text-white"></i></a>
+        <a href="https://www.instagram.com/"><i class="icon-instagram_circle icon2x text-white"></i></a>
       </div>
       
       <!-- Main Footer -->

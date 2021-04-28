@@ -30,7 +30,7 @@ ob_start();
                             <?php if ($article['active'] == true) : ?>
                                 <div class="s-12 m-12 l-4 margin-m-bottom div-row">
                                     <a>
-                                        <img src="<?= $article['inputPictures']; ?>" alt="" class="zoom">
+                                        <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><img src="<?= $article['inputPictures']; ?>" alt="" class="zoom"></a>
                                         <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?= $article['inputNameAnnonce']; ?></strong><br></a>
                                         <?= $article['inputPrice']; ?> CHF<br>
                                         <?= $article['inputCity']; ?><br><br>
