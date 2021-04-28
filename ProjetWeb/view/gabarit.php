@@ -26,7 +26,7 @@
     <script type="text/javascript" src="view/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="view/js/validation.js"></script>
   </head>  
-  
+
   <body class="size-1140">
   	    <!-- HEADER -->
     <header role="banner">    
