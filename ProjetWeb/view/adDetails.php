@@ -13,19 +13,21 @@ ob_start();
 <div class="section background-white">
     <div class="line">
         <div class="margin">
-            <a class="size-texte"><?=$article['inputNameAnnonce']; ?></a><br><br>
             <div class="row1">
-                <img class="imgDetail"src="<?=$article['inputPictures']; ?>">
+                <img  class="zoom2" src="<?=$article['inputPictures'] ?>" alt="">
             </div>
             <div class="row2">
-                <br><a class="size-texte2"><?=$article['inputAvailableDate']; ?></a><br><br>
-                <a class="size-texte2"><?=$article['inputPrice']; ?> CHF</a><br><br>
-                <a class="size-texte2"><?=$article['inputNPA']; ?></a>
-                <a class="size-texte2"><?=$article['inputCity']; ?></a><br><br>
-                <a class="size-texte2"><?=$article['inputAddress']; ?></a><br><br><br>
+                <br><strong>Nom du propriétaire :</strong> <a class="size-texte3"><?=$article['inputName']; ?></a><br>
+                <strong>Adresse : </strong><a class="size-texte3"><?=$article['inputAddress']; ?></a><br>
+                <strong>Code postal : </strong><a class="size-texte3"><?=$article['inputNPA']; ?></a><br>
+                <strong>Ville : </strong><a class="size-texte3"><?=$article['inputCity']; ?></a><br>
+                <strong>Date de disponibilité : </strong><a class="size-texte3"><?=$article['inputAvailableDate']; ?></a><br>
+                <strong>Prix : </strong><a class="size-texte3"><?=$article['inputPrice']; ?> CHF</a><br><br>
+                <a class="size-texte3"><?=$article['inputDescription']; ?></a><br><br>
             </div>
             <div class="row1">
-                <a class="size-texte2"><?=$article['inputDescription']; ?></a><br><br>
+                <br><strong>Nom de l'annonce :</strong> <br>
+                <a class="size-texte3"><?=$article['inputNameAnnonce']; ?></a><br><br><br>
             </div>
             <div class="row2">
                 <a href="mailto:<?=$article['Email']; ?>" class="submit-form button background-primary border-radius text-white">Envoyer un message à l'annonceur</a>
