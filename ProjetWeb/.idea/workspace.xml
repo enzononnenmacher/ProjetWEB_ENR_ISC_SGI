@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented directory images" />
+=======
+    <list default="true" id="2aca36c9-dd50-4c1a-8980-38f9d658299c" name="Default Changelist" comment="implemented directory images">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_03_2021_08_11__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_03_2021_08_11__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/view/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/Register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/gabarit.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/view/adDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/adDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/all.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/all.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/css/responsee.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/css/responsee.css" afterDir="false" />
+>>>>>>> a5da0f4a9c210cf8102c035f6911be7664a6abbf
+    </list>
+>>>>>>> b7e1580f5881202cb37393f907e71be14565617c
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,9 +110,12 @@
       <workItem from="1617208837901" duration="2197000" />
       <workItem from="1617211490826" duration="2130000" />
       <workItem from="1619599813470" duration="1715000" />
+<<<<<<< HEAD
       <workItem from="1619601985386" duration="170000" />
       <workItem from="1619609673844" duration="1950000" />
       <workItem from="1619611672734" duration="1907000" />
+=======
+>>>>>>> a5da0f4a9c210cf8102c035f6911be7664a6abbf
     </task>
     <task id="LOCAL-00001" summary="all modified">
       <created>1615188393078</created>
