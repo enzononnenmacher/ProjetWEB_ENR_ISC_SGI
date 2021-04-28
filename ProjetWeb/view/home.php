@@ -34,6 +34,21 @@ ob_start();
                         </div>
                     </div>
                 </div>
+        <div class="line">
+            <div class="carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-wide-arrows">
+                <div class="item">
+                    <div class="s-12 center">
+                        <img class="imgAcceuil" src="view/img/portfolio/appart.jpg" alt="">
+                        <div class="carousel-content">
+                            <div class="padding-2x">
+                                <div class="s-12 m-12 l-8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Section 1 -->
@@ -45,7 +60,7 @@ ob_start();
                     <?php if (($article['active'] == true) && ($count <= 2)) : ?>
                         <div class="s-12 m-12 l-4 margin-m-bottom div-row">
                             <a>
-                                <img src="<?= $article['inputPictures']; ?>" alt="" class="zoom">
+                                <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><img src="<?= $article['inputPictures']; ?>" alt="" class="zoom"></a>
                                 <a href="../index.php?action=adDetails&ID=<?= $article['ID']; ?>"><br><strong><?= $article['inputNameAnnonce']; ?></strong><br></a>
                                 <?= $article['inputPrice']; ?> CHF<br>
                                 <?= $article['inputCity']; ?><br><br>

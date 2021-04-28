@@ -360,10 +360,10 @@ ul.chevron .submenu > a::after, ul.chevron .sub-submenu > a::after, ul.chevron .
 nav.fixed, .fixed nav {
   padding: 1rem 0;
 }
-.logo img {
+.logo{
   margin: 0 auto;
   max-width: 300px;
-  width: 100%;
+  width: 40%;
 }
 
 /* Aside Nav */
