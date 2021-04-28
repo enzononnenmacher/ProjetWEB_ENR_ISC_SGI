@@ -12,7 +12,10 @@
 // Calls home page
 function home()
 {
-    require "view/home.php";
+        require "model/annonceManager.php";
+        $temp = jsonToAnnonce();
+        $articles = array_reverse($temp);
+        require "view/home.php";
 }
 
 // Calls about page
